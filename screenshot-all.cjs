@@ -12,7 +12,7 @@ const DEMO_USER = {
   password: 'demo123',
   firstName: 'Max',
   lastName: 'Mustermann',
-  phone: '+49 40 334668098',
+  phone: '+49 (0)89 588088170',
   address: 'Friedrichstraße 123',
   city: 'Berlin',
   postalCode: '10117',

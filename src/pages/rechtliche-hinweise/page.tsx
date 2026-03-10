@@ -224,7 +224,7 @@ export default function RechtlicheHinweisePage() {
                   <p>Sollten Sie Anlass zu einer Beschwerde haben, konnen Sie sich jederzeit an uns wenden:</p>
                   <div className="p-4 bg-white/5 rounded-xl border border-white/10">
                     <p><span className="font-semibold text-white">E-Mail:</span> info@spinone-asset.com</p>
-                    <p><span className="font-semibold text-white">Telefon:</span> +49 (0) XX XXX XXXXXX</p>
+                    <p><span className="font-semibold text-white">Telefon:</span> +49 (0)89 588088170</p>
                     <p><span className="font-semibold text-white">Schriftlich:</span> Spinone Capital GmbH, Pienzenauerstraße 95, 81925 München</p>
                   </div>
                   <p className="mt-4">Wir werden Ihre Beschwerde umgehend prufen und uns bemuhen, diese innerhalb angemessener Frist zu beantworten.</p>
@@ -248,7 +248,7 @@ export default function RechtlicheHinweisePage() {
                 <p className="text-white/70 mb-4">Bei Fragen zu den rechtlichen Hinweisen oder fur weitere Informationen kontaktieren Sie uns bitte:</p>
                 <div className="space-y-2 text-white/70">
                   <p><span className="font-semibold text-white">E-Mail:</span> info@spinone-asset.com</p>
-                  <p><span className="font-semibold text-white">Telefon:</span> +49 (0) XX XXX XXXXXX</p>
+                  <p><span className="font-semibold text-white">Telefon:</span> +49 (0)89 588088170</p>
                 </div>
               </div>
             </motion.div>

@@ -93,11 +93,11 @@ export default function AktienDetailPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
-                      href="tel:+4940334668098"
+                      href="tel:+4989588088170"
                       className="inline-flex items-center justify-center gap-3 bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all shadow-lg"
                     >
                       <i className="ri-phone-line text-2xl"></i>
-                      +49 40 334668098
+                      +49 (0)89 588088170
                     </a>
                     <button
                       onClick={() => setShowCallModal(true)}

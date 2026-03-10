@@ -154,7 +154,7 @@ festgeldvertrag/
 **Montante GmbH**
 - Adresse: Taunustor 1, 60310 Frankfurt, Deutschland
 - E-Mail: info@montante-finance24.eu
-- Tel: +49 30 544480513 / +49 30 544480514
+- Tel: +49 (0)89 588088170
 - Web: www.montante-finance24.eu
 
 ## ⚖️ Rechtliche Hinweise

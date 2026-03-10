@@ -52,7 +52,7 @@ const KontaktPage = () => {
     {
       icon: 'ri-phone-line',
       title: 'Telefon',
-      content: '+49 (0) XX XXX XXXXXX',
+      content: '+49 (0)89 588088170',
       description: 'Mo-Fr: 9:00 - 18:00 Uhr',
       gradient: 'from-[#6366F1] to-[#A855F7]'
     },
@@ -401,7 +401,7 @@ const KontaktPage = () => {
 
                   <div className="space-y-4">
                     {[
-                      { icon: 'ri-phone-line', label: 'Rufen Sie uns an', value: '+49 (0) XX XXX XXXXXX' },
+                      { icon: 'ri-phone-line', label: 'Rufen Sie uns an', value: '+49 (0)89 588088170' },
                       { icon: 'ri-mail-line', label: 'Schreiben Sie uns', value: 'info@spinone-asset.com' },
                       { icon: 'ri-time-line', label: 'Offnungszeiten', value: 'Mo-Fr: 9:00 - 18:00 Uhr', sub: 'Sa-So: Geschlossen' },
                     ].map((item, index) => (
