@@ -319,7 +319,7 @@ export default function DashboardPage() {
                             +49 (0) XX XXX XXXXXX
                           </a>
                           <a
-                            href="mailto:info@spinone-asset.de"
+                            href="mailto:info@spinone-asset.com"
                             className="inline-flex items-center justify-center gap-2 bg-white text-cyan-600 border border-cyan-200 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-50 transition-all"
                           >
                             <i className="ri-mail-line text-xl"></i>

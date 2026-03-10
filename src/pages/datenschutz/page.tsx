@@ -124,7 +124,7 @@ export default function DatenschutzPage() {
                       <p>81925 München</p>
                       <p>Deutschland</p>
                       <p className="mt-2">Telefon: +49 (0) XX XXX XXXXXX</p>
-                      <p>E-Mail: info@spinone-asset.de</p>
+                      <p>E-Mail: info@spinone-asset.com</p>
                     </div>
                     <p className="mt-2">Verantwortliche Stelle ist die naturliche oder juristische Person, die allein oder gemeinsam mit anderen uber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. A.) entscheidet.</p>
                   </div>
@@ -183,7 +183,7 @@ export default function DatenschutzPage() {
                 <h3 className="font-semibold text-lg text-white mb-3">Fragen zum Datenschutz?</h3>
                 <p className="text-white/70 mb-4">Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, bei Auskunften, Berichtigung, Sperrung oder Loschung von Daten wenden Sie sich bitte an:</p>
                 <p className="text-white/70">
-                  <span className="font-semibold text-white">E-Mail:</span> info@spinone-asset.de<br />
+                  <span className="font-semibold text-white">E-Mail:</span> info@spinone-asset.com<br />
                   <span className="font-semibold text-white">Telefon:</span> +49 (0) XX XXX XXXXXX
                 </p>
               </div>

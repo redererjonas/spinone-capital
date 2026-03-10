@@ -59,7 +59,7 @@ const KontaktPage = () => {
     {
       icon: 'ri-mail-line',
       title: 'E-Mail',
-      content: 'info@spinone-asset.de',
+      content: 'info@spinone-asset.com',
       description: 'Antwort innerhalb von 24h',
       gradient: 'from-[#06B6D4] to-[#6366F1]'
     },
@@ -402,7 +402,7 @@ const KontaktPage = () => {
                   <div className="space-y-4">
                     {[
                       { icon: 'ri-phone-line', label: 'Rufen Sie uns an', value: '+49 (0) XX XXX XXXXXX' },
-                      { icon: 'ri-mail-line', label: 'Schreiben Sie uns', value: 'info@spinone-asset.de' },
+                      { icon: 'ri-mail-line', label: 'Schreiben Sie uns', value: 'info@spinone-asset.com' },
                       { icon: 'ri-time-line', label: 'Offnungszeiten', value: 'Mo-Fr: 9:00 - 18:00 Uhr', sub: 'Sa-So: Geschlossen' },
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">

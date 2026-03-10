@@ -60,12 +60,12 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
               {/* Additional Contact Options */}
               <div className="grid grid-cols-2 gap-3 mb-6">
                 <a
-                  href="mailto:info@spinone-asset.de"
+                  href="mailto:info@spinone-asset.com"
                   className="bg-slate-100 hover:bg-slate-200 rounded-xl p-4 transition-colors group"
                 >
                   <i className="ri-mail-line text-2xl text-slate-500 group-hover:text-cyan-500 transition-colors mb-2 block"></i>
                   <p className="text-sm font-medium text-slate-700">E-Mail</p>
-                  <p className="text-xs text-slate-500">info@spinone-asset.de</p>
+                  <p className="text-xs text-slate-500">info@spinone-asset.com</p>
                 </a>
                 <a
                   href="https://wa.me/49XXXXXXXXXX"

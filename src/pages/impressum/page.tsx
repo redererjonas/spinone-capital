@@ -72,7 +72,7 @@ export default function ImpressumPage() {
                 </h2>
                 <div className="space-y-2 text-white/70">
                   <p><span className="font-semibold text-white">Telefon:</span> +49 (0) XX XXX XXXXXX</p>
-                  <p><span className="font-semibold text-white">E-Mail:</span> info@spinone-asset.de</p>
+                  <p><span className="font-semibold text-white">E-Mail:</span> info@spinone-asset.com</p>
                 </div>
               </div>
 

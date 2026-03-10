@@ -186,7 +186,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-white/80 mb-1">E-Mail</p>
-                    <p className="text-xs text-white/50">info@spinone-asset.de</p>
+                    <p className="text-xs text-white/50">info@spinone-asset.com</p>
                   </div>
                 </div>
               </div>
