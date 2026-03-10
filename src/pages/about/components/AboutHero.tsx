@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 
 export default function AboutHero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-[#020617]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-white bg-filigree">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Gradient Orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#6366F1]/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#A855F7]/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#06B6D4]/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-50/50 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-sky-50/50 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-50/30 rounded-full blur-3xl" />
 
         {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.03)_1px,transparent_1px)] bg-[size:100px_100px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:100px_100px]" />
 
         {/* Radial Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/50 via-transparent to-[#020617]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white" />
       </div>
 
       {/* Content */}
@@ -31,10 +31,10 @@ export default function AboutHero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="inline-flex items-center space-x-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 mb-8"
+            className="inline-flex items-center space-x-2 bg-slate-50 border border-slate-200 rounded-full px-6 py-3 mb-8"
           >
-            <i className="ri-building-line text-[#06B6D4] text-xl" />
-            <span className="text-sm font-semibold text-white/90">Seit über 15 Jahren in München</span>
+            <i className="ri-building-line text-[#0EA5E9] text-xl" />
+            <span className="text-sm font-semibold text-slate-800">Seit über 15 Jahren in München</span>
           </motion.div>
 
           {/* Headline */}
@@ -42,10 +42,10 @@ export default function AboutHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight"
           >
             Über{' '}
-            <span className="bg-gradient-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-accent-cyan bg-clip-text text-transparent">
               SPINONE CAPITAL
             </span>
           </motion.h1>
@@ -55,7 +55,7 @@ export default function AboutHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-slate-500 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
             Regulierte Vermögensmanagement-Gesellschaft mit Fokus auf professionelle Anlagelösungen für institutionelle und qualifizierte Anleger
           </motion.p>
@@ -68,9 +68,9 @@ export default function AboutHero() {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
           >
             {[
-              { icon: 'ri-map-pin-line', label: 'Standort', value: 'Wien', gradient: 'from-[#6366F1] to-[#A855F7]' },
-              { icon: 'ri-shield-check-line', label: 'Regulierung', value: 'KAGB §44', gradient: 'from-[#06B6D4] to-[#6366F1]' },
-              { icon: 'ri-funds-line', label: 'Fokus', value: 'Spezial-AIF', gradient: 'from-[#A855F7] to-[#EC4899]' }
+              { icon: 'ri-map-pin-line', label: 'Standort', value: 'Wien', gradient: 'from-[#2563EB] to-[#3B82F6]' },
+              { icon: 'ri-shield-check-line', label: 'Regulierung', value: 'KAGB §44', gradient: 'from-[#0EA5E9] to-[#2563EB]' },
+              { icon: 'ri-funds-line', label: 'Fokus', value: 'Spezial-AIF', gradient: 'from-[#3B82F6] to-[#0EA5E9]' }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -80,13 +80,13 @@ export default function AboutHero() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="group relative"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />
-                <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-500">
-                  <div className={`w-14 h-14 bg-gradient-to-br ${item.gradient} rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[#6366F1]/25`}>
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-2xl blur-xl opacity-10 group-hover:opacity-20 transition-opacity duration-500`} />
+                <div className="relative bg-white shadow-sm border border-slate-200 rounded-2xl p-6 hover:border-slate-300 transition-all duration-500">
+                  <div className={`w-14 h-14 bg-gradient-to-br ${item.gradient} rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[#2563EB]/15`}>
                     <i className={`${item.icon} text-3xl text-white`} />
                   </div>
-                  <p className="text-sm text-gray-500 mb-2">{item.label}</p>
-                  <p className="text-xl font-bold text-white">{item.value}</p>
+                  <p className="text-sm text-slate-400 mb-2">{item.label}</p>
+                  <p className="text-xl font-bold text-slate-900">{item.value}</p>
                 </div>
               </motion.div>
             ))}
@@ -103,9 +103,9 @@ export default function AboutHero() {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2"
+            className="w-6 h-10 border-2 border-slate-300 rounded-full flex justify-center pt-2"
           >
-            <div className="w-1.5 h-1.5 bg-[#6366F1] rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full" />
           </motion.div>
         </motion.div>
       </div>

@@ -48,7 +48,7 @@ export default function DashboardPage() {
     : 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+    <div className="min-h-screen bg-slate-50">
       <DashboardHeader />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -58,10 +58,9 @@ export default function DashboardPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
         >
-          <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-3xl p-8 md:p-10 text-white shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48"></div>
-            <div className="absolute bottom-0 left-0 w-80 h-80 bg-black/10 rounded-full -ml-40 -mb-40"></div>
-            <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl"></div>
+          <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl p-8 md:p-10 text-white shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-48 -mt-48"></div>
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-black/5 rounded-full -ml-40 -mb-40"></div>
 
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -71,7 +70,7 @@ export default function DashboardPage() {
                       <i className="ri-hand-heart-line text-3xl"></i>
                     </div>
                     <div>
-                      <p className="text-white/80 text-sm font-medium">Willkommen zuruck,</p>
+                      <p className="text-white/80 text-sm font-medium">Willkommen zurück,</p>
                       <h1 className="text-3xl md:text-4xl font-heading font-bold">
                         {user.firstName} {user.lastName}
                         {user.spouse && (
@@ -81,14 +80,14 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <p className="text-white/80 text-base md:text-lg max-w-2xl">
-                    Ihr Portfolio entwickelt sich hervorragend. Hier ist Ihre aktuelle Ubersicht.
+                    Ihr Portfolio entwickelt sich hervorragend. Hier ist Ihre aktuelle Übersicht.
                   </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button
                     onClick={() => setShowCallModal(true)}
-                    className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3.5 rounded-xl font-semibold transition-all shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:-translate-y-0.5 cursor-pointer whitespace-nowrap flex items-center justify-center gap-2"
+                    className="bg-sky-500 hover:bg-sky-400 text-white px-6 py-3.5 rounded-xl font-semibold transition-all shadow-lg shadow-sky-500/30 hover:shadow-sky-500/50 hover:-translate-y-0.5 cursor-pointer whitespace-nowrap flex items-center justify-center gap-2"
                   >
                     <i className="ri-add-circle-line text-xl"></i>
                     Neue Investition
@@ -112,13 +111,13 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="bg-white shadow-lg shadow-indigo-500/10 border border-slate-200 rounded-2xl p-6 hover:border-indigo-300 transition-all group"
+            className="bg-white shadow-lg shadow-blue-600/10 border border-slate-200 rounded-2xl p-6 hover:border-blue-300 transition-all group"
           >
             <div className="flex items-start justify-between mb-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30 group-hover:scale-110 transition-transform">
                 <i className="ri-wallet-3-line text-2xl text-white"></i>
               </div>
-              <div className="bg-indigo-100 text-indigo-600 px-3 py-1.5 rounded-full text-xs font-bold">
+              <div className="bg-blue-100 text-blue-600 px-3 py-1.5 rounded-full text-xs font-bold">
                 Gesamt
               </div>
             </div>
@@ -136,13 +135,13 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-white shadow-lg shadow-indigo-500/10 border border-slate-200 rounded-2xl p-6 hover:border-cyan-300 transition-all group"
+            className="bg-white shadow-lg shadow-blue-600/10 border border-slate-200 rounded-2xl p-6 hover:border-sky-300 transition-all group"
           >
             <div className="flex items-start justify-between mb-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/30 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-sky-500/30 group-hover:scale-110 transition-transform">
                 <i className="ri-money-euro-circle-line text-2xl text-white"></i>
               </div>
-              <div className="bg-cyan-100 text-cyan-600 px-3 py-1.5 rounded-full text-xs font-bold">
+              <div className="bg-sky-100 text-sky-600 px-3 py-1.5 rounded-full text-xs font-bold">
                 Investiert
               </div>
             </div>
@@ -160,7 +159,7 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-white shadow-lg shadow-indigo-500/10 border border-slate-200 rounded-2xl p-6 hover:border-emerald-300 transition-all group"
+            className="bg-white shadow-lg shadow-blue-600/10 border border-slate-200 rounded-2xl p-6 hover:border-emerald-300 transition-all group"
           >
             <div className="flex items-start justify-between mb-4">
               <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform">
@@ -207,13 +206,13 @@ export default function DashboardPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-white shadow-lg shadow-indigo-500/10 border border-slate-200 rounded-2xl p-6 hover:border-purple-300 transition-all group"
+            className="bg-white shadow-lg shadow-blue-600/10 border border-slate-200 rounded-2xl p-6 hover:border-blue-300 transition-all group"
           >
             <div className="flex items-start justify-between mb-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
                 <i className="ri-percent-line text-2xl text-white"></i>
               </div>
-              <div className="bg-purple-100 text-purple-600 px-3 py-1.5 rounded-full text-xs font-bold">
+              <div className="bg-blue-100 text-blue-600 px-3 py-1.5 rounded-full text-xs font-bold">
                 Rendite
               </div>
             </div>
@@ -236,7 +235,7 @@ export default function DashboardPage() {
             transition={{ delay: 0.5 }}
             className="mb-8"
           >
-            <div className="bg-white shadow-lg shadow-indigo-500/10 border border-slate-200 rounded-2xl border-2 border-red-300 overflow-hidden">
+            <div className="bg-white shadow-lg shadow-blue-600/10 border border-slate-200 rounded-2xl border-2 border-red-300 overflow-hidden">
               <div className="bg-gradient-to-r from-red-600 to-orange-600 px-6 py-4">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
@@ -259,7 +258,7 @@ export default function DashboardPage() {
                       <div className="flex-1">
                         <h4 className="font-bold text-orange-600 mb-2 text-lg">Status Ihrer Kapitalanlage</h4>
                         <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                          Ihr Konto wurde auf Ihren ausdrucklichen Wunsch hin eingerichtet. Wir mochten Sie jedoch darauf hinweisen, dass die vereinbarte Kapitaleinlage in Hohe von <span className="font-bold text-slate-800">300.000 EUR</span> bislang noch nicht auf unserem Konto eingegangen ist.
+                          Ihr Konto wurde auf Ihren ausdrücklichen Wunsch hin eingerichtet. Wir möchten Sie jedoch darauf hinweisen, dass die vereinbarte Kapitaleinlage in Höhe von <span className="font-bold text-slate-800">300.000 EUR</span> bislang noch nicht auf unserem Konto eingegangen ist.
                         </p>
                         <div className="bg-white rounded-lg p-4 border border-orange-200">
                           <div className="flex items-center gap-2 mb-2">
@@ -267,7 +266,7 @@ export default function DashboardPage() {
                             <span className="text-sm font-semibold text-orange-600">Aktueller Status:</span>
                           </div>
                           <p className="text-sm text-slate-500">
-                            Die Kapitaluberweisung steht derzeit noch aus.
+                            Die Kapitalüberweisung steht derzeit noch aus.
                           </p>
                         </div>
                       </div>
@@ -282,7 +281,7 @@ export default function DashboardPage() {
                       <div className="flex-1">
                         <h4 className="font-bold text-red-600 mb-2 text-lg">Wichtiger Hinweis zur Kontolaufzeit</h4>
                         <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                          Gemass unseren Geschaftsbedingungen und Ihrer Kontovereinbarung muss die Kapitaleinlage innerhalb von <span className="font-bold text-slate-800">48 Stunden nach Kontoerstellung</span> erfolgen. Sollte die Uberweisung nicht innerhalb dieser Frist bei uns eingehen, sind wir leider gezwungen, Ihr Konto aus administrativen Grunden zu schliessen und alle damit verbundenen Daten zu loschen.
+                          Gemäß unseren Geschäftsbedingungen und Ihrer Kontovereinbarung muss die Kapitaleinlage innerhalb von <span className="font-bold text-slate-800">48 Stunden nach Kontoerstellung</span> erfolgen. Sollte die Überweisung nicht innerhalb dieser Frist bei uns eingehen, sind wir leider gezwungen, Ihr Konto aus administrativen Gründen zu schließen und alle damit verbundenen Daten zu löschen.
                         </p>
                         <div className="bg-white rounded-lg p-4 border border-red-200">
                           <div className="flex items-center justify-between mb-3">
@@ -293,34 +292,34 @@ export default function DashboardPage() {
                             </div>
                           </div>
                           <p className="text-xs text-red-500 italic">
-                            Nach Ablauf dieser Frist wird das Konto automatisch deaktiviert und geloscht.
+                            Nach Ablauf dieser Frist wird das Konto automatisch deaktiviert und gelöscht.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-6 border border-cyan-200">
+                  <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-6 border border-sky-200">
                     <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i className="ri-customer-service-2-line text-2xl text-cyan-500"></i>
+                      <div className="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i className="ri-customer-service-2-line text-2xl text-blue-500"></i>
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-bold text-cyan-600 mb-2">Wir sind fur Sie da</h4>
+                        <h4 className="font-bold text-blue-600 mb-2">Wir sind für Sie da</h4>
                         <p className="text-slate-600 text-sm mb-4">
-                          Bei Fragen zur Uberweisung oder wenn Sie Unterstutzung benotigen, stehen wir Ihnen gerne zur Verfugung.
+                          Bei Fragen zur Überweisung oder wenn Sie Unterstützung benötigen, stehen wir Ihnen gerne zur Verfügung.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3">
                           <a
                             href="tel:+4989588088170"
-                            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-indigo-500/30 transition-all"
+                            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-600/30 transition-all"
                           >
                             <i className="ri-phone-line text-xl"></i>
                             +49 (0)89 588088170
                           </a>
                           <a
                             href="mailto:info@spinone-asset.com"
-                            className="inline-flex items-center justify-center gap-2 bg-white text-cyan-600 border border-cyan-200 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-50 transition-all"
+                            className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 border border-sky-200 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-all"
                           >
                             <i className="ri-mail-line text-xl"></i>
                             E-Mail senden

@@ -87,7 +87,7 @@ export default function ProfilPage() {
     setPasswordMessage({ type: '', text: '' });
 
     if (!passwordData.currentPassword || !passwordData.newPassword || !passwordData.confirmPassword) {
-      setPasswordMessage({ type: 'error', text: 'Bitte fullen Sie alle Felder aus' });
+      setPasswordMessage({ type: 'error', text: 'Bitte füllen Sie alle Felder aus' });
       return;
     }
 
@@ -97,7 +97,7 @@ export default function ProfilPage() {
     }
 
     if (passwordData.newPassword !== passwordData.confirmPassword) {
-      setPasswordMessage({ type: 'error', text: 'Passworter stimmen nicht uberein' });
+      setPasswordMessage({ type: 'error', text: 'Passwörter stimmen nicht überein' });
       return;
     }
 
@@ -109,27 +109,27 @@ export default function ProfilPage() {
     if (user) {
       const success = updatePassword(user.id, passwordData.newPassword);
       if (success) {
-        setPasswordMessage({ type: 'success', text: 'Passwort erfolgreich geandert!' });
+        setPasswordMessage({ type: 'success', text: 'Passwort erfolgreich geändert!' });
         setPasswordData({ currentPassword: '', newPassword: '', confirmPassword: '' });
         setTimeout(() => setPasswordMessage({ type: '', text: '' }), 3000);
       } else {
-        setPasswordMessage({ type: 'error', text: 'Fehler beim Andern des Passworts' });
+        setPasswordMessage({ type: 'error', text: 'Fehler beim Ändern des Passworts' });
       }
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+    <div className="min-h-screen bg-slate-50">
       <DashboardHeader />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         {/* Back Button */}
         <button
           onClick={() => navigate('/dashboard')}
-          className="flex items-center gap-2 text-slate-500 hover:text-cyan-600 transition-colors mb-6 cursor-pointer"
+          className="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors mb-6 cursor-pointer"
         >
           <i className="ri-arrow-left-line text-lg"></i>
-          <span className="text-sm font-medium">Zuruck zur Ubersicht</span>
+          <span className="text-sm font-medium">Zurück zur Übersicht</span>
         </button>
 
         {/* Header */}
@@ -139,7 +139,7 @@ export default function ProfilPage() {
           className="mb-8"
         >
           <h1 className="text-3xl md:text-4xl font-heading font-bold text-slate-800 mb-2">Mein Profil</h1>
-          <p className="text-slate-500 text-sm md:text-base">Verwalten Sie Ihre personlichen Informationen und Einstellungen</p>
+          <p className="text-slate-500 text-sm md:text-base">Verwalten Sie Ihre persönlichen Informationen und Einstellungen</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
@@ -152,7 +152,7 @@ export default function ProfilPage() {
           >
             <div className="bg-white shadow-lg border border-slate-200 rounded-2xl p-6 sticky top-24">
               <div className="text-center mb-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl shadow-indigo-500/30">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl shadow-blue-600/30">
                   <span className="text-white font-bold text-3xl">
                     {user.firstName[0]}{user.lastName[0]}
                   </span>
@@ -163,8 +163,8 @@ export default function ProfilPage() {
 
               <div className="space-y-3 pt-6 border-t border-slate-200">
                 <div className="flex items-center gap-3 text-sm">
-                  <div className="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center">
-                    <i className="ri-calendar-line text-indigo-600 text-lg"></i>
+                  <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                    <i className="ri-calendar-line text-blue-600 text-lg"></i>
                   </div>
                   <div>
                     <p className="text-slate-500 text-xs">Mitglied seit</p>
@@ -172,8 +172,8 @@ export default function ProfilPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
-                  <div className="w-10 h-10 bg-cyan-50 rounded-lg flex items-center justify-center">
-                    <i className="ri-map-pin-line text-cyan-600 text-lg"></i>
+                  <div className="w-10 h-10 bg-sky-50 rounded-lg flex items-center justify-center">
+                    <i className="ri-map-pin-line text-blue-600 text-lg"></i>
                   </div>
                   <div>
                     <p className="text-slate-500 text-xs">Standort</p>
@@ -204,7 +204,7 @@ export default function ProfilPage() {
               transition={{ delay: 0.2 }}
               className="bg-white shadow-lg border border-slate-200 rounded-2xl p-6 md:p-8"
             >
-              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-6">Personliche Informationen</h2>
+              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-6">Persönliche Informationen</h2>
 
               {message.text && (
                 <motion.div
@@ -230,7 +230,7 @@ export default function ProfilPage() {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                   <div>
@@ -240,7 +240,7 @@ export default function ProfilPage() {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function ProfilPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                   <div>
@@ -263,7 +263,7 @@ export default function ProfilPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                 </div>
@@ -275,7 +275,7 @@ export default function ProfilPage() {
                     name="address"
                     value={formData.address}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                   />
                 </div>
 
@@ -287,7 +287,7 @@ export default function ProfilPage() {
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                   <div>
@@ -297,7 +297,7 @@ export default function ProfilPage() {
                       name="postalCode"
                       value={formData.postalCode}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                   <div>
@@ -307,7 +307,7 @@ export default function ProfilPage() {
                       name="country"
                       value={formData.country}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                 </div>
@@ -320,27 +320,27 @@ export default function ProfilPage() {
                       name="dateOfBirth"
                       value={formData.dateOfBirth}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">Nationalitat</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">Nationalität</label>
                     <input
                       type="text"
                       name="nationality"
                       value={formData.nationality}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                     />
                   </div>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white py-3.5 px-6 rounded-xl font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3.5 px-6 rounded-xl font-semibold shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <i className="ri-save-line text-lg"></i>
-                  <span>Anderungen speichern</span>
+                  <span>Änderungen speichern</span>
                 </button>
               </form>
             </motion.div>
@@ -384,7 +384,7 @@ export default function ProfilPage() {
                   <div className="mt-4 flex items-start gap-3 bg-pink-50 rounded-lg p-4 border border-pink-200">
                     <i className="ri-information-line text-pink-600 text-xl mt-0.5"></i>
                     <p className="text-xs text-pink-700">
-                      Diese Investition wird gemeinsam mit Ihrem Ehepartner verwaltet. Beide Partner haben die gleichen Rechte und Pflichten bezuglich dieser Anlage.
+                      Diese Investition wird gemeinsam mit Ihrem Ehepartner verwaltet. Beide Partner haben die gleichen Rechte und Pflichten bezüglich dieser Anlage.
                     </p>
                   </div>
                 </div>
@@ -398,7 +398,7 @@ export default function ProfilPage() {
               transition={{ delay: 0.3 }}
               className="bg-white shadow-lg border border-slate-200 rounded-2xl p-6 md:p-8"
             >
-              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-6">Passwort andern</h2>
+              <h2 className="text-2xl font-heading font-bold text-slate-800 mb-6">Passwort ändern</h2>
 
               {passwordMessage.text && (
                 <motion.div
@@ -423,7 +423,7 @@ export default function ProfilPage() {
                     name="currentPassword"
                     value={passwordData.currentPassword}
                     onChange={handlePasswordChange}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                   />
                 </div>
 
@@ -434,27 +434,27 @@ export default function ProfilPage() {
                     name="newPassword"
                     value={passwordData.newPassword}
                     onChange={handlePasswordChange}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Passwort bestatigen</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Passwort bestätigen</label>
                   <input
                     type="password"
                     name="confirmPassword"
                     value={passwordData.confirmPassword}
                     onChange={handlePasswordChange}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm text-slate-800 placeholder-slate-400"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white py-3.5 px-6 rounded-xl font-semibold shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white py-3.5 px-6 rounded-xl font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <i className="ri-lock-password-line text-lg"></i>
-                  <span>Passwort andern</span>
+                  <span>Passwort ändern</span>
                 </button>
               </form>
             </motion.div>

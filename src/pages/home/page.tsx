@@ -8,7 +8,7 @@ import Testimonials from '../../components/feature/Testimonials';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#020617]">
+    <div className="min-h-screen bg-white">
       <main>
         <HeroSection />
         <ServicesOverview />

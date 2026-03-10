@@ -8,25 +8,25 @@ export default function AboutContent() {
       icon: 'ri-shield-check-line',
       title: 'Regulatorische Exzellenz',
       description: 'Vollständige Konformität mit allen regulatorischen Anforderungen nach KAGB',
-      gradient: 'from-[#6366F1] to-[#A855F7]'
+      gradient: 'from-[#2563EB] to-[#3B82F6]'
     },
     {
       icon: 'ri-eye-line',
       title: 'Transparenz',
       description: 'Klare Kommunikation und vollständige Offenlegung aller Anlageentscheidungen',
-      gradient: 'from-[#06B6D4] to-[#6366F1]'
+      gradient: 'from-[#0EA5E9] to-[#2563EB]'
     },
     {
       icon: 'ri-user-heart-line',
       title: 'Kundenorientierung',
       description: 'Individuelle Lösungen basierend auf Ihren spezifischen Anlagezielen',
-      gradient: 'from-[#A855F7] to-[#EC4899]'
+      gradient: 'from-[#3B82F6] to-[#0EA5E9]'
     },
     {
       icon: 'ri-line-chart-line',
       title: 'Performance',
       description: 'Langfristige Wertschöpfung durch bewährte Anlagestrategien',
-      gradient: 'from-[#EC4899] to-[#06B6D4]'
+      gradient: 'from-[#0EA5E9] to-[#2563EB]'
     }
   ];
 
@@ -35,24 +35,24 @@ export default function AboutContent() {
       title: 'Governance & Compliance',
       description: 'Strenge Governance-Strukturen und umfassende Compliance-Prozesse gewährleisten höchste Standards in allen Geschäftsbereichen.',
       icon: 'ri-shield-star-line',
-      gradient: 'from-[#6366F1] to-[#06B6D4]'
+      gradient: 'from-[#2563EB] to-[#0EA5E9]'
     },
     {
       title: 'Risikomanagement',
       description: 'Systematische Identifikation, Bewertung und Steuerung von Risiken durch modernste Risikomanagement-Systeme und erfahrene Spezialisten.',
       icon: 'ri-shield-line',
-      gradient: 'from-[#A855F7] to-[#6366F1]'
+      gradient: 'from-[#3B82F6] to-[#2563EB]'
     },
     {
       title: 'Kapitalmarktexpertise',
       description: 'Tiefgreifende Kenntnisse internationaler Kapitalmärkte und langjährige Erfahrung in der Verwaltung von Spezial-AIF bis 500 Mio. EUR.',
       icon: 'ri-global-line',
-      gradient: 'from-[#EC4899] to-[#A855F7]'
+      gradient: 'from-[#0EA5E9] to-[#3B82F6]'
     }
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-[#020617] via-[#0f172a] to-[#020617]">
+    <section className="py-24 bg-gradient-to-b from-white via-slate-50 to-white bg-filigree">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Company Introduction */}
         <div className="mb-24">
@@ -63,14 +63,14 @@ export default function AboutContent() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#6366F1]/10 to-[#06B6D4]/10 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 mb-6">
-                <i className="ri-building-4-line text-[#6366F1] text-xl" />
-                <span className="text-sm font-bold text-white/90 uppercase tracking-wider">Unser Unternehmen</span>
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#2563EB]/5 to-[#0EA5E9]/5 border border-slate-200 rounded-full px-6 py-3 mb-6">
+                <i className="ri-building-4-line text-[#2563EB] text-xl" />
+                <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Unser Unternehmen</span>
               </div>
-              <h2 className="text-4xl font-bold text-white mb-6">
+              <h2 className="text-4xl font-bold text-slate-900 mb-6">
                 Spinone Capital GmbH
               </h2>
-              <div className="space-y-4 text-lg text-gray-400 leading-relaxed">
+              <div className="space-y-4 text-lg text-slate-500 leading-relaxed">
                 <p>
                   Mit Sitz in München sind wir eine nach §44 iVm §2 Abs.4 KAGB registrierte Vermögensmanagement-Gesellschaft, die sich auf die professionelle Verwaltung von Spezial-AIF bis 500 Mio. EUR spezialisiert hat.
                 </p>
@@ -91,15 +91,15 @@ export default function AboutContent() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   className="group relative block"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1]/20 to-[#A855F7]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-[#6366F1]/50 transition-all duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/5 to-[#3B82F6]/5 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative bg-white shadow-sm border border-slate-200 rounded-2xl p-6 hover:border-[#2563EB]/30 transition-all duration-500">
                     <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#6366F1] to-[#A855F7] rounded-xl flex items-center justify-center shadow-lg shadow-[#6366F1]/25">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#2563EB] to-[#3B82F6] rounded-xl flex items-center justify-center shadow-lg shadow-[#2563EB]/15">
                         <i className="ri-shield-star-line text-2xl text-white" />
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500 font-medium">BaFin-ID</p>
-                        <p className="text-lg font-bold text-white">10160251</p>
+                        <p className="text-sm text-slate-400 font-medium">BaFin-ID</p>
+                        <p className="text-lg font-bold text-slate-900">10160251</p>
                       </div>
                     </div>
                   </div>
@@ -109,15 +109,15 @@ export default function AboutContent() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   className="group relative"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#06B6D4]/20 to-[#6366F1]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-[#06B6D4]/50 transition-all duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#0EA5E9]/5 to-[#2563EB]/5 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative bg-white shadow-sm border border-slate-200 rounded-2xl p-6 hover:border-[#0EA5E9]/30 transition-all duration-500">
                     <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#06B6D4] to-[#6366F1] rounded-xl flex items-center justify-center shadow-lg shadow-[#06B6D4]/25">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#0EA5E9] to-[#2563EB] rounded-xl flex items-center justify-center shadow-lg shadow-[#0EA5E9]/15">
                         <i className="ri-global-line text-2xl text-white" />
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500 font-medium">LEI-Code</p>
-                        <p className="text-xs font-bold text-white">529900ABC...</p>
+                        <p className="text-sm text-slate-400 font-medium">LEI-Code</p>
+                        <p className="text-xs font-bold text-slate-900">529900ABC...</p>
                       </div>
                     </div>
                   </div>
@@ -132,17 +132,17 @@ export default function AboutContent() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#6366F1] to-[#A855F7] rounded-3xl blur-3xl opacity-20" />
-              <div className="relative rounded-3xl overflow-hidden border border-white/10">
-                <div className="aspect-[4/5] bg-gradient-to-br from-[#6366F1]/20 via-[#A855F7]/20 to-[#EC4899]/20 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB] to-[#3B82F6] rounded-3xl blur-3xl opacity-10" />
+              <div className="relative rounded-3xl overflow-hidden border border-slate-200">
+                <div className="aspect-[4/5] bg-gradient-to-br from-[#2563EB]/5 via-[#3B82F6]/5 to-[#0EA5E9]/5 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-32 h-32 bg-gradient-to-br from-[#6366F1] to-[#A855F7] rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-[#6366F1]/30">
+                    <div className="w-32 h-32 bg-gradient-to-br from-[#2563EB] to-[#3B82F6] rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-[#2563EB]/20">
                       <i className="ri-building-2-line text-6xl text-white" />
                     </div>
-                    <p className="text-white/60 text-lg">Spinone Capital Office München</p>
+                    <p className="text-slate-500 text-lg">Spinone Capital Office München</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
               </div>
             </motion.div>
           </div>
@@ -157,13 +157,13 @@ export default function AboutContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">
               Unsere{' '}
-              <span className="bg-gradient-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-accent-cyan bg-clip-text text-transparent">
                 Werte
               </span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-500 max-w-3xl mx-auto">
               Die Grundpfeiler unserer Unternehmensphilosophie
             </p>
           </motion.div>
@@ -179,18 +179,18 @@ export default function AboutContent() {
                 whileHover={{ y: -10 }}
                 className="group relative"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} rounded-2xl blur-xl opacity-10 group-hover:opacity-30 transition-opacity duration-500`} />
-                <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:border-white/20 transition-all duration-500 h-full">
+                <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} rounded-2xl blur-xl opacity-5 group-hover:opacity-15 transition-opacity duration-500`} />
+                <div className="relative bg-white shadow-sm border border-slate-200 rounded-2xl p-8 hover:border-slate-300 transition-all duration-500 h-full">
                   <div className="relative mb-6">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300`} />
+                    <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} rounded-2xl blur-lg opacity-15 group-hover:opacity-25 transition-opacity duration-300`} />
                     <div className={`relative w-16 h-16 bg-gradient-to-br ${value.gradient} rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
                       <i className={`${value.icon} text-3xl text-white`} />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#6366F1] transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#2563EB] transition-colors duration-300">
                     {value.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-slate-500 leading-relaxed">
                     {value.description}
                   </p>
                 </div>
@@ -208,13 +208,13 @@ export default function AboutContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">
               Unsere{' '}
-              <span className="bg-gradient-to-r from-[#06B6D4] to-[#6366F1] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#0EA5E9] to-[#2563EB] bg-clip-text text-transparent">
                 Kernkompetenzen
               </span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-500 max-w-3xl mx-auto">
               Expertise, die Vertrauen schafft
             </p>
           </motion.div>
@@ -231,30 +231,30 @@ export default function AboutContent() {
               >
                 <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   <div className="group relative">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-3xl blur-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500`} />
-                    <div className="relative rounded-3xl overflow-hidden border border-white/10">
-                      <div className="aspect-video bg-gradient-to-br from-white/5 to-white/10 flex items-center justify-center">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-3xl blur-3xl opacity-10 group-hover:opacity-15 transition-opacity duration-500`} />
+                    <div className="relative rounded-3xl overflow-hidden border border-slate-200">
+                      <div className="aspect-video bg-gradient-to-br from-slate-50 to-blue-50/50 flex items-center justify-center">
                         <div className={`w-24 h-24 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-500`}>
                           <i className={`${item.icon} text-5xl text-white`} />
                         </div>
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/80 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
                     </div>
                   </div>
                 </div>
 
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="relative mb-6 inline-block">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-2xl blur-lg opacity-30`} />
+                    <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-2xl blur-lg opacity-15`} />
                     <div className={`relative w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
                       <i className={`${item.icon} text-3xl text-white`} />
                     </div>
                   </div>
 
-                  <h3 className="text-3xl font-bold text-white mb-4">
+                  <h3 className="text-3xl font-bold text-slate-900 mb-4">
                     {item.title}
                   </h3>
-                  <p className="text-lg text-gray-400 leading-relaxed">
+                  <p className="text-lg text-slate-500 leading-relaxed">
                     {item.description}
                   </p>
                 </div>

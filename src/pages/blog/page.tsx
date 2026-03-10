@@ -13,29 +13,26 @@ const BlogPage = () => {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-[#020617]">
+    <div className="min-h-screen bg-white">
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
-          {/* Animated Background */}
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 bg-slate-50">
+          {/* Subtle Background */}
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-[#6366F1]/20 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#A855F7]/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#06B6D4]/10 rounded-full blur-3xl"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary-100/40 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-100/20 rounded-full blur-3xl"></div>
           </div>
-
-          {/* Grid Pattern */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 py-20 text-center">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center space-x-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 mb-8"
+              className="inline-flex items-center space-x-2 px-4 py-2 bg-white shadow-sm rounded-full border border-slate-200 mb-8"
             >
-              <i className="ri-article-line text-[#06B6D4]"></i>
-              <span className="text-sm text-white/90 font-medium">Insights & Analysen</span>
+              <i className="ri-article-line text-primary-600"></i>
+              <span className="text-sm text-slate-700 font-medium">Insights & Analysen</span>
             </motion.div>
 
             {/* Headline */}
@@ -43,9 +40,9 @@ const BlogPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight"
             >
-              Blog & <span className="bg-gradient-to-r from-[#6366F1] via-[#A855F7] to-[#06B6D4] bg-clip-text text-transparent">News</span>
+              Blog & <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-accent-cyan bg-clip-text text-transparent">News</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -53,7 +50,7 @@ const BlogPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-xl md:text-2xl text-white/70 mb-8 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed"
             >
               Aktuelle Marktanalysen, Kapitalmarkt-News und regulatorische Updates
             </motion.p>
@@ -63,18 +60,18 @@ const BlogPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-base text-white/50 max-w-2xl mx-auto"
+              className="text-base text-slate-400 max-w-2xl mx-auto"
             >
-              Bleiben Sie informiert uber die neuesten Entwicklungen an den Finanzmarkten
+              Bleiben Sie informiert über die neuesten Entwicklungen an den Finanzmärkten
             </motion.p>
           </div>
 
           {/* Bottom Gradient */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#020617] to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         </section>
 
         {/* Blog Content */}
-        <section className="py-20 bg-[#020617]">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             {/* Category Filter */}
             <motion.div
@@ -89,8 +86,8 @@ const BlogPage = () => {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-6 py-2 rounded-full font-medium transition-all duration-300 whitespace-nowrap cursor-pointer ${
                     selectedCategory === category
-                      ? 'bg-gradient-to-r from-[#6366F1] to-[#A855F7] text-white shadow-lg shadow-[#6366F1]/25'
-                      : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
+                      ? 'bg-gradient-to-r from-primary-600 to-primary-500 text-white shadow-lg shadow-primary-500/25'
+                      : 'bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200'
                   }`}
                 >
                   {category}
@@ -107,7 +104,7 @@ const BlogPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="group relative bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-[#6366F1]/50 transition-all duration-500 hover:shadow-xl hover:shadow-[#6366F1]/10"
+                  className="group relative bg-white shadow-sm rounded-2xl overflow-hidden border border-slate-200 hover:border-primary-300 transition-all duration-500 hover:shadow-lg hover:shadow-primary-500/10"
                 >
                   <Link to={`/blog/${post.id}`} className="block">
                     <div className="relative w-full h-56 overflow-hidden">
@@ -116,35 +113,35 @@ const BlogPage = () => {
                         alt={post.title}
                         className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                       <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-gradient-to-r from-[#6366F1] to-[#A855F7] text-white text-xs font-semibold rounded-full">
+                        <span className="px-3 py-1 bg-gradient-to-r from-primary-600 to-primary-500 text-white text-xs font-semibold rounded-full">
                           {post.category}
                         </span>
                       </div>
                     </div>
 
                     <div className="p-6">
-                      <div className="flex items-center space-x-4 text-sm text-white/50 mb-3">
+                      <div className="flex items-center space-x-4 text-sm text-slate-400 mb-3">
                         <span className="flex items-center space-x-1">
-                          <i className="ri-calendar-line text-[#06B6D4]"></i>
+                          <i className="ri-calendar-line text-primary-500"></i>
                           <span>{post.date}</span>
                         </span>
                         <span className="flex items-center space-x-1">
-                          <i className="ri-time-line text-[#06B6D4]"></i>
+                          <i className="ri-time-line text-primary-500"></i>
                           <span>{post.readTime}</span>
                         </span>
                       </div>
 
-                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#06B6D4] transition-colors duration-300 line-clamp-2">
+                      <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition-colors duration-300 line-clamp-2">
                         {post.title}
                       </h3>
 
-                      <p className="text-white/60 leading-relaxed mb-4 line-clamp-3">
+                      <p className="text-slate-500 leading-relaxed mb-4 line-clamp-3">
                         {post.excerpt}
                       </p>
 
-                      <div className="flex items-center space-x-2 text-[#6366F1] font-semibold group-hover:space-x-3 transition-all duration-300">
+                      <div className="flex items-center space-x-2 text-primary-600 font-semibold group-hover:space-x-3 transition-all duration-300">
                         <span>Weiterlesen</span>
                         <i className="ri-arrow-right-line group-hover:translate-x-1 transition-transform duration-300"></i>
                       </div>

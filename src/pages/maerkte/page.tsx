@@ -50,29 +50,26 @@ const MaerktePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#020617]">
+    <div className="min-h-screen bg-white">
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
-          {/* Animated Background */}
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 bg-slate-50">
+          {/* Subtle Background */}
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-20 right-10 w-72 h-72 bg-[#6366F1]/20 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#06B6D4]/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#A855F7]/10 rounded-full blur-3xl"></div>
+            <div className="absolute top-20 right-10 w-72 h-72 bg-primary-100/40 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 left-10 w-96 h-96 bg-sky-100/30 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-100/20 rounded-full blur-3xl"></div>
           </div>
-
-          {/* Grid Pattern */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 py-20 text-center">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center space-x-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 mb-8"
+              className="inline-flex items-center space-x-2 px-4 py-2 bg-white shadow-sm rounded-full border border-slate-200 mb-8"
             >
-              <i className="ri-line-chart-line text-[#06B6D4]"></i>
-              <span className="text-sm text-white/90 font-medium">Live Marktdaten</span>
+              <i className="ri-line-chart-line text-primary-600"></i>
+              <span className="text-sm text-slate-700 font-medium">Live Marktdaten</span>
             </motion.div>
 
             {/* Headline */}
@@ -80,9 +77,9 @@ const MaerktePage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight"
             >
-              Markt<span className="bg-gradient-to-r from-[#6366F1] via-[#A855F7] to-[#06B6D4] bg-clip-text text-transparent">ubersicht</span>
+              Markt<span className="bg-gradient-to-r from-primary-600 via-primary-500 to-accent-cyan bg-clip-text text-transparent">übersicht</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -90,7 +87,7 @@ const MaerktePage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-xl md:text-2xl text-white/70 mb-8 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed"
             >
               Aktuelle Kurse und Marktentwicklungen in Echtzeit
             </motion.p>
@@ -106,16 +103,16 @@ const MaerktePage = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
-              <span className="text-green-400 text-sm font-medium">Live-Daten</span>
+              <span className="text-green-600 text-sm font-medium">Live-Daten</span>
             </motion.div>
           </div>
 
           {/* Bottom Gradient */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#020617] to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         </section>
 
         {/* Market Tabs */}
-        <section className="py-20 bg-[#020617]">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             {/* Tab Navigation */}
             <motion.div
@@ -126,7 +123,7 @@ const MaerktePage = () => {
             >
               {[
                 { id: 'indices', label: 'Indizes', icon: 'ri-bar-chart-grouped-line' },
-                { id: 'currencies', label: 'Wahrungen', icon: 'ri-exchange-dollar-line' },
+                { id: 'currencies', label: 'Währungen', icon: 'ri-exchange-dollar-line' },
                 { id: 'bonds', label: 'Anleihen', icon: 'ri-stock-line' },
               ].map((tab) => (
                 <button
@@ -134,8 +131,8 @@ const MaerktePage = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex items-center space-x-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 cursor-pointer ${
                     activeTab === tab.id
-                      ? 'bg-gradient-to-r from-[#6366F1] to-[#A855F7] text-white shadow-lg shadow-[#6366F1]/25'
-                      : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
+                      ? 'bg-gradient-to-r from-primary-600 to-primary-500 text-white shadow-lg shadow-primary-500/25'
+                      : 'bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200'
                   }`}
                 >
                   <i className={tab.icon}></i>
@@ -153,17 +150,17 @@ const MaerktePage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
-                  className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#6366F1]/50 transition-all duration-500 hover:shadow-xl hover:shadow-[#6366F1]/10"
+                  className="group relative bg-white shadow-sm rounded-2xl p-6 border border-slate-200 hover:border-primary-300 transition-all duration-500 hover:shadow-lg hover:shadow-primary-500/10"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <h3 className="text-lg font-bold text-white">{item.name}</h3>
-                      <p className="text-white/50 text-sm">{item.symbol}</p>
+                      <h3 className="text-lg font-bold text-slate-900">{item.name}</h3>
+                      <p className="text-slate-400 text-sm">{item.symbol}</p>
                     </div>
                     <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${
                       item.changePercent >= 0
-                        ? 'bg-green-500/20 text-green-400'
-                        : 'bg-red-500/20 text-red-400'
+                        ? 'bg-green-50 text-green-500'
+                        : 'bg-red-50 text-red-500'
                     }`}>
                       <i className={item.changePercent >= 0 ? 'ri-arrow-up-line text-xl' : 'ri-arrow-down-line text-xl'}></i>
                     </div>
@@ -171,24 +168,24 @@ const MaerktePage = () => {
 
                   <div className="flex items-end justify-between">
                     <div>
-                      <p className="text-3xl font-bold text-white">{item.price}</p>
+                      <p className="text-3xl font-bold text-slate-900">{item.price}</p>
                     </div>
                     <div className="text-right">
-                      <p className={`text-sm font-medium ${item.changePercent >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                      <p className={`text-sm font-medium ${item.changePercent >= 0 ? 'text-green-500' : 'text-red-500'}`}>
                         {item.changePercent >= 0 ? '+' : ''}{item.change.toLocaleString('de-DE')}
                       </p>
-                      <p className={`text-lg font-bold ${item.changePercent >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                      <p className={`text-lg font-bold ${item.changePercent >= 0 ? 'text-green-500' : 'text-red-500'}`}>
                         {item.changePercent >= 0 ? '+' : ''}{item.changePercent.toFixed(2)}%
                       </p>
                     </div>
                   </div>
 
                   {/* Mini Chart Placeholder */}
-                  <div className="mt-4 h-12 rounded-lg bg-white/5 flex items-end justify-between px-2 overflow-hidden">
+                  <div className="mt-4 h-12 rounded-lg bg-slate-50 flex items-end justify-between px-2 overflow-hidden">
                     {[...Array(20)].map((_, i) => (
                       <div
                         key={i}
-                        className={`w-1 rounded-t ${item.changePercent >= 0 ? 'bg-green-500/50' : 'bg-red-500/50'}`}
+                        className={`w-1 rounded-t ${item.changePercent >= 0 ? 'bg-green-300' : 'bg-red-300'}`}
                         style={{ height: `${Math.random() * 100}%` }}
                       ></div>
                     ))}
@@ -205,17 +202,17 @@ const MaerktePage = () => {
               className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6"
             >
               {[
-                { label: 'Gewinner', value: '156', icon: 'ri-arrow-up-circle-line', color: 'text-green-400', bg: 'bg-green-500/10' },
-                { label: 'Verlierer', value: '89', icon: 'ri-arrow-down-circle-line', color: 'text-red-400', bg: 'bg-red-500/10' },
-                { label: 'Unverandert', value: '34', icon: 'ri-subtract-line', color: 'text-white/60', bg: 'bg-white/5' },
+                { label: 'Gewinner', value: '156', icon: 'ri-arrow-up-circle-line', color: 'text-green-500', bg: 'bg-green-50' },
+                { label: 'Verlierer', value: '89', icon: 'ri-arrow-down-circle-line', color: 'text-red-500', bg: 'bg-red-50' },
+                { label: 'Unverändert', value: '34', icon: 'ri-subtract-line', color: 'text-slate-500', bg: 'bg-slate-50' },
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className={`${stat.bg} backdrop-blur-sm rounded-2xl p-6 border border-white/10`}
+                  className={`${stat.bg} rounded-2xl p-6 border border-slate-200`}
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-white/60 text-sm mb-1">{stat.label}</p>
+                      <p className="text-slate-500 text-sm mb-1">{stat.label}</p>
                       <p className={`text-4xl font-bold ${stat.color}`}>{stat.value}</p>
                     </div>
                     <i className={`${stat.icon} text-4xl ${stat.color}`}></i>
@@ -227,7 +224,7 @@ const MaerktePage = () => {
         </section>
 
         {/* Info Section */}
-        <section className="py-20 bg-white/[0.02]">
+        <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -235,24 +232,24 @@ const MaerktePage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                   Professionelle Marktanalysen
                 </h2>
-                <p className="text-white/70 text-lg leading-relaxed mb-6">
-                  Unsere Experten analysieren taglich die globalen Finanzmarkte und identifizieren Chancen und Risiken fur Ihr Portfolio.
+                <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                  Unsere Experten analysieren täglich die globalen Finanzmärkte und identifizieren Chancen und Risiken für Ihr Portfolio.
                 </p>
                 <ul className="space-y-4">
                   {[
                     'Echtzeit-Kursdaten',
                     'Detaillierte Chartanalysen',
-                    'Makrookonomische Indikatoren',
+                    'Makroökonomische Indikatoren',
                     'Regulatorische Updates',
                   ].map((item, index) => (
                     <li key={index} className="flex items-center space-x-3">
-                      <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#6366F1] to-[#A855F7] flex items-center justify-center">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-r from-primary-500 to-primary-600 flex items-center justify-center">
                         <i className="ri-check-line text-white text-sm"></i>
                       </div>
-                      <span className="text-white/80">{item}</span>
+                      <span className="text-slate-700">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -262,19 +259,19 @@ const MaerktePage = () => {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10"
+                className="bg-white shadow-sm rounded-3xl p-8 border border-slate-200"
               >
                 <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-r from-[#6366F1] to-[#A855F7] flex items-center justify-center">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-r from-primary-500 to-primary-600 flex items-center justify-center">
                     <i className="ri-customer-service-2-line text-4xl text-white"></i>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Personliche Beratung</h3>
-                  <p className="text-white/70 mb-6">
-                    Sprechen Sie mit unseren Experten uber Ihre individuellen Anlageziele.
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Persönliche Beratung</h3>
+                  <p className="text-slate-600 mb-6">
+                    Sprechen Sie mit unseren Experten über Ihre individuellen Anlageziele.
                   </p>
                   <a
                     href="/kontakt"
-                    className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-[#6366F1] to-[#A855F7] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-[#6366F1]/25 transition-all duration-300"
+                    className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-300"
                   >
                     <span>Beratung anfragen</span>
                     <i className="ri-arrow-right-line"></i>

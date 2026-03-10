@@ -10,12 +10,12 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --primary: #6366F1;
-            --primary-dark: #4F46E5;
-            --primary-light: #818CF8;
-            --secondary: #A855F7;
-            --accent-cyan: #06B6D4;
-            --accent-cyan-light: #22D3EE;
+            --primary: #2563EB;
+            --primary-dark: #1D4ED8;
+            --primary-light: #3B82F6;
+            --secondary: #3B82F6;
+            --accent-cyan: #0EA5E9;
+            --accent-cyan-light: #38BDF8;
             --text-dark: #0F172A;
             --text-light: #475569;
             --text-muted: #64748B;
@@ -84,9 +84,9 @@
         }
 
         .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3); }
         .btn-secondary { background: linear-gradient(135deg, var(--accent-cyan), var(--primary)); color: white; }
-        .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3); }
+        .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3); }
         .btn-success { background: linear-gradient(135deg, var(--success), #059669); color: white; }
         .btn-success:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
 
@@ -105,7 +105,7 @@
             color: var(--text-dark);
         }
 
-        .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15); }
+        .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
         .form-textarea { min-height: 60px; resize: vertical; }
 
         .table-manager { margin-top: 20px; padding-top: 20px; border-top: 2px solid var(--border); }
@@ -155,7 +155,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
         }
 
         .logo span { font-size: 26px; font-weight: 800; font-family: 'Manrope', sans-serif; color: white; }
@@ -205,7 +205,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
         }
 
         .highlight-value { font-size: 31px; font-weight: 800; font-family: 'Manrope', sans-serif; }
@@ -223,7 +223,7 @@
         .data-table th { padding: 9px 10px; text-align: left; font-weight: 600; font-size: 10.8px; }
         .data-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); color: var(--text-dark); background: var(--bg-white); }
         .data-table tbody tr:nth-child(even) td { background: var(--bg-light); }
-        .data-table tbody tr:first-child td { background: linear-gradient(90deg, rgba(99, 102, 241, 0.08) 0%, transparent 100%); }
+        .data-table tbody tr:first-child td { background: linear-gradient(90deg, rgba(37, 99, 235, 0.08) 0%, transparent 100%); }
 
         .best-rate { color: var(--primary); font-weight: 700; }
 
@@ -257,7 +257,7 @@
 
         .footer { position: absolute; bottom: 0; left: 0; right: 0; background: var(--bg-subtle); padding: 8px 15mm; border-top: 1px solid var(--border); font-size: 8px; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center; }
 
-        .notification { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border-radius: 10px; font-size: 14px; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); z-index: 1000; animation: slideIn 0.3s ease; }
+        .notification { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border-radius: 10px; font-size: 14px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); z-index: 1000; animation: slideIn 0.3s ease; }
         @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 
         @media print {
@@ -284,7 +284,7 @@
             <div class="form-group"><label class="form-label">Tagline</label><input type="text" class="form-input" id="tagline" value="Vermögensmanagement"></div>
             <div class="form-group"><label class="form-label">Dokumenttitel</label><input type="text" class="form-input" id="dokumentTitel" value="Tagesgeldangebote"></div>
             <div class="form-group"><label class="form-label">Dokumentdatum</label><input type="text" class="form-input" id="dokumentDatum" value="Januar 2026 - Vergleichsanalyse"></div>
-            <div class="form-group"><label class="form-label">Verfuegbarkeit</label><input type="text" class="form-input" id="verfuegbarkeit" value="Taeglich"></div>
+            <div class="form-group"><label class="form-label">Verfügbarkeit</label><input type="text" class="form-input" id="verfuegbarkeit" value="Täglich"></div>
             <div class="form-group"><label class="form-label">Mindestanlage</label><input type="text" class="form-input" id="mindestanlage" value="Ab 1 EUR"></div>
             <div class="form-group"><label class="form-label">Anzahl Anbieter</label><input type="text" class="form-input" id="anzahlAnbieter" value="6 Anbieter"></div>
             <div class="form-group"><label class="form-label">Bester Zinssatz</label><input type="text" class="form-input" id="besterZins" value="3,50%"></div>
@@ -292,19 +292,19 @@
         </div>
 
         <div class="form-grid" style="margin-top: 15px;">
-            <div class="form-group"><label class="form-label">Marktueberblick</label><textarea class="form-input form-textarea" id="marktueberblick">Tagesgeld ist die flexibelste Form der Geldanlage. Ihr Kapital ist taeglich verfuegbar, ohne Kuendigungsfrist.</textarea></div>
-            <div class="form-group"><label class="form-label">Sicherheit</label><textarea class="form-input form-textarea" id="sicherheit">Tagesgeld vereint maximale Flexibilitaet mit attraktiven Zinsen. Die gesetzliche Einlagensicherung bis 100.000 EUR schuetzt Ihr Kapital.</textarea></div>
-            <div class="form-group"><label class="form-label">Empfehlung</label><textarea class="form-input form-textarea" id="empfehlung">Trade Republic bietet mit 3,50% p.a. den aktuell hoechsten Tagesgeldzins.</textarea></div>
+            <div class="form-group"><label class="form-label">Marktüberblick</label><textarea class="form-input form-textarea" id="marktueberblick">Tagesgeld ist die flexibelste Form der Geldanlage. Ihr Kapital ist täglich verfügbar, ohne Kündigungsfrist.</textarea></div>
+            <div class="form-group"><label class="form-label">Sicherheit</label><textarea class="form-input form-textarea" id="sicherheit">Tagesgeld vereint maximale Flexibilität mit attraktiven Zinsen. Die gesetzliche Einlagensicherung bis 100.000 EUR schützt Ihr Kapital.</textarea></div>
+            <div class="form-group"><label class="form-label">Empfehlung</label><textarea class="form-input form-textarea" id="empfehlung">Trade Republic bietet mit 3,50% p.a. den aktuell höchsten Tagesgeldzins.</textarea></div>
         </div>
 
         <div class="table-manager">
             <h3 class="panel-title" style="font-size: 16px; margin-bottom: 10px;"><i class="ri-table-line"></i> Tagesgeld-Tabelle verwalten</h3>
             <div class="table-controls">
-                <button class="btn btn-success btn-small" onclick="dokumentManager.zeileHinzufuegen()"><i class="ri-add-line"></i> Zeile hinzufuegen</button>
+                <button class="btn btn-success btn-small" onclick="dokumentManager.zeileHinzufuegen()"><i class="ri-add-line"></i> Zeile hinzufügen</button>
                 <button class="btn btn-primary btn-small" onclick="dokumentManager.zeileEntfernen()"><i class="ri-subtract-line"></i> Letzte Zeile entfernen</button>
             </div>
             <table class="editable-table" id="bankenTabelle">
-                <thead><tr><th>Anbieter</th><th>Zinssatz p.a.</th><th>Neukunden-Bonus</th><th>Zinsgutschrift</th><th>Mindestanlage</th><th>Maximalanlage</th><th>Verfuegbarkeit</th></tr></thead>
+                <thead><tr><th>Anbieter</th><th>Zinssatz p.a.</th><th>Neukunden-Bonus</th><th>Zinsgutschrift</th><th>Mindestanlage</th><th>Maximalanlage</th><th>Verfügbarkeit</th></tr></thead>
                 <tbody id="tabelleBody"></tbody>
             </table>
         </div>
@@ -321,7 +321,7 @@
                     <div class="doc-info"><h2 class="doc-title" id="output-dokumentTitel">Tagesgeldangebote</h2><p class="doc-date" id="output-dokumentDatum">Januar 2026 - Vergleichsanalyse</p></div>
                 </div>
                 <div class="header-stats">
-                    <div class="stat-card"><span class="stat-value" id="output-verfuegbarkeit">Taeglich</span><span class="stat-label">Verfuegbarkeit</span></div>
+                    <div class="stat-card"><span class="stat-value" id="output-verfuegbarkeit">Täglich</span><span class="stat-label">Verfügbarkeit</span></div>
                     <div class="stat-card"><span class="stat-value" id="output-mindestanlage">Ab 1 EUR</span><span class="stat-label">Mindestanlage</span></div>
                     <div class="stat-card"><span class="stat-value" id="output-anzahlAnbieter">6 Anbieter</span><span class="stat-label">Im Vergleich</span></div>
                 </div>
@@ -331,11 +331,11 @@
         <div class="content">
             <div class="overview">
                 <div class="info-card">
-                    <h3 class="info-title"><i class="ri-wallet-3-line"></i> Tagesgeld Marktueberblick</h3>
+                    <h3 class="info-title"><i class="ri-wallet-3-line"></i> Tagesgeld Marktüberblick</h3>
                     <p class="info-text" id="output-marktueberblick">Tagesgeld ist die flexibelste Form der Geldanlage.</p>
                     <div class="feature-list">
-                        <span class="feature-badge"><i class="ri-24-hours-line"></i> Taeglich verfuegbar</span>
-                        <span class="feature-badge"><i class="ri-money-euro-circle-line"></i> Keine Gebuehren</span>
+                        <span class="feature-badge"><i class="ri-24-hours-line"></i> Täglich verfügbar</span>
+                        <span class="feature-badge"><i class="ri-money-euro-circle-line"></i> Keine Gebühren</span>
                         <span class="feature-badge"><i class="ri-shield-check-line"></i> Einlagensicherung</span>
                     </div>
                 </div>
@@ -353,7 +353,7 @@
 
             <div class="info-card" style="margin: 10px 0;">
                 <h3 class="info-title"><i class="ri-shield-star-line"></i> Sicherheit & Vorteile</h3>
-                <p class="info-text" id="output-sicherheit">Tagesgeld vereint maximale Flexibilitaet mit attraktiven Zinsen.</p>
+                <p class="info-text" id="output-sicherheit">Tagesgeld vereint maximale Flexibilität mit attraktiven Zinsen.</p>
             </div>
 
             <div class="bottom-grid">
@@ -374,10 +374,10 @@
                 <div class="recommendation-card">
                     <h4 class="card-title"><i class="ri-lightbulb-line"></i> Unsere Expertenempfehlung</h4>
                     <div class="card-text">
-                        <p id="output-empfehlung">Trade Republic bietet mit 3,50% p.a. den aktuell hoechsten Tagesgeldzins.</p>
+                        <p id="output-empfehlung">Trade Republic bietet mit 3,50% p.a. den aktuell höchsten Tagesgeldzins.</p>
                         <p style="margin-top: 6px;">
-                            <strong><i class="ri-check-line"></i> Taeglich verfuegbar</strong><br>
-                            <strong><i class="ri-check-line"></i> Keine Kuendigungsfrist</strong><br>
+                            <strong><i class="ri-check-line"></i> Täglich verfügbar</strong><br>
+                            <strong><i class="ri-check-line"></i> Keine Kündigungsfrist</strong><br>
                             <strong><i class="ri-check-line"></i> Keine Strafzinsen</strong>
                         </p>
                     </div>
@@ -394,15 +394,15 @@
     <script>
         const dokumentManager = {
             tabellenDaten: [
-                ['Trade Republic', '3,50%', '+0,50% (3 Mon.)', 'Monatlich', '1 EUR', '50.000 EUR', 'Taeglich'],
-                ['Scalable Capital', '3,25%', '-', 'Quartalsweise', '1 EUR', '100.000 EUR', 'Taeglich'],
-                ['C24 Bank', '3,00%', '+0,25% (6 Mon.)', 'Monatlich', '1 EUR', 'Unbegrenzt', 'Taeglich'],
-                ['ING', '2,75%', '-', 'Quartalsweise', '1 EUR', '500.000 EUR', 'Taeglich'],
-                ['Comdirect', '2,50%', '+0,50% (4 Mon.)', 'Quartalsweise', '1 EUR', '1.000.000 EUR', 'Taeglich'],
-                ['DKB', '2,25%', '-', 'Quartalsweise', '1 EUR', 'Unbegrenzt', 'Taeglich']
+                ['Trade Republic', '3,50%', '+0,50% (3 Mon.)', 'Monatlich', '1 EUR', '50.000 EUR', 'Täglich'],
+                ['Scalable Capital', '3,25%', '-', 'Quartalsweise', '1 EUR', '100.000 EUR', 'Täglich'],
+                ['C24 Bank', '3,00%', '+0,25% (6 Mon.)', 'Monatlich', '1 EUR', 'Unbegrenzt', 'Täglich'],
+                ['ING', '2,75%', '-', 'Quartalsweise', '1 EUR', '500.000 EUR', 'Täglich'],
+                ['Comdirect', '2,50%', '+0,50% (4 Mon.)', 'Quartalsweise', '1 EUR', '1.000.000 EUR', 'Täglich'],
+                ['DKB', '2,25%', '-', 'Quartalsweise', '1 EUR', 'Unbegrenzt', 'Täglich']
             ],
 
-            tabellenHeader: ['Anbieter', 'Zinssatz p.a.', 'Neukunden-Bonus', 'Zinsgutschrift', 'Mindestanlage', 'Maximalanlage', 'Verfuegbarkeit'],
+            tabellenHeader: ['Anbieter', 'Zinssatz p.a.', 'Neukunden-Bonus', 'Zinsgutschrift', 'Mindestanlage', 'Maximalanlage', 'Verfügbarkeit'],
 
             init: function() {
                 this.erstelleEditierbareTabelle();
@@ -474,10 +474,10 @@
                 this.benachrichtigung('Dokument aktualisiert', 'success');
             },
 
-            zeileHinzufuegen: function() { this.tabellenDaten.push(['Neue Bank', '0,00%', '-', 'Monatlich', '1 EUR', '100.000 EUR', 'Taeglich']); this.erstelleEditierbareTabelle(); this.aktualisieren(); },
+            zeileHinzufuegen: function() { this.tabellenDaten.push(['Neue Bank', '0,00%', '-', 'Monatlich', '1 EUR', '100.000 EUR', 'Täglich']); this.erstelleEditierbareTabelle(); this.aktualisieren(); },
             zeileEntfernen: function() { if (this.tabellenDaten.length > 1) { this.tabellenDaten.pop(); this.erstelleEditierbareTabelle(); this.aktualisieren(); } else { this.benachrichtigung('Mindestens eine Zeile muss vorhanden sein', 'error'); } },
-            drucken: function() { window.print(); this.benachrichtigung('Druckdialog geoeffnet', 'info'); },
-            alsPDF: function() { window.print(); this.benachrichtigung('Waehlen Sie "Als PDF speichern" im Druckdialog', 'info'); },
+            drucken: function() { window.print(); this.benachrichtigung('Druckdialog geöffnet', 'info'); },
+            alsPDF: function() { window.print(); this.benachrichtigung('Wählen Sie "Als PDF speichern" im Druckdialog', 'info'); },
 
             speichern: function() {
                 const daten = { felder: {}, tabelle: this.tabellenDaten };
@@ -499,7 +499,7 @@
             benachrichtigung: function(text, typ = 'info') {
                 const notification = document.createElement('div');
                 notification.className = 'notification';
-                notification.style.background = typ === 'success' ? 'linear-gradient(135deg, #10b981, #059669)' : typ === 'error' ? 'linear-gradient(135deg, #ef4444, #dc2626)' : 'linear-gradient(135deg, #6366F1, #A855F7)';
+                notification.style.background = typ === 'success' ? 'linear-gradient(135deg, #10b981, #059669)' : typ === 'error' ? 'linear-gradient(135deg, #ef4444, #dc2626)' : 'linear-gradient(135deg, #2563EB, #3B82F6)';
                 notification.textContent = text;
                 document.body.appendChild(notification);
                 setTimeout(() => { notification.style.animation = 'slideOut 0.3s ease'; setTimeout(() => notification.remove(), 300); }, 3000);

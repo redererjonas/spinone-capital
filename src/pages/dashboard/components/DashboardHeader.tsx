@@ -20,7 +20,7 @@ export default function DashboardHeader() {
   };
 
   const navItems = [
-    { path: '/dashboard', label: 'Ubersicht', icon: 'ri-dashboard-3-line' },
+    { path: '/dashboard', label: 'Übersicht', icon: 'ri-dashboard-3-line' },
     { path: '/dashboard/festgeld', label: 'Festgeld', icon: 'ri-safe-2-line' },
     { path: '/dashboard/flexgeld', label: 'Flexgeld', icon: 'ri-exchange-line' },
     { path: '/dashboard/tagesgeld', label: 'Tagesgeld', icon: 'ri-calendar-check-line' },
@@ -38,16 +38,16 @@ export default function DashboardHeader() {
             className="flex items-center gap-3 cursor-pointer group"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <div className="relative w-12 h-12 bg-gradient-to-br from-indigo-500 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 shadow-lg shadow-indigo-500/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+              <div className="relative w-12 h-12 bg-gradient-to-br from-blue-600 via-blue-600 to-blue-700 rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-600/30">
                 <span className="text-2xl font-bold text-white">S</span>
               </div>
             </div>
             <div className="hidden sm:block">
-              <span className="text-xl font-heading font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="text-xl font-heading font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                 SPINONE CAPITAL
               </span>
-              <p className="text-xs text-indigo-600 font-semibold -mt-1">Kundenportal</p>
+              <p className="text-xs text-blue-600 font-semibold -mt-1">Kundenportal</p>
             </div>
           </button>
 
@@ -61,8 +61,8 @@ export default function DashboardHeader() {
                   onClick={() => navigate(item.path)}
                   className={`relative px-4 py-2.5 rounded-xl text-sm font-medium transition-all whitespace-nowrap group ${
                     isActive
-                      ? 'text-indigo-600'
-                      : 'text-slate-600 hover:text-indigo-600'
+                      ? 'text-blue-600'
+                      : 'text-slate-600 hover:text-blue-600'
                   }`}
                 >
                   <div className="flex items-center gap-2">
@@ -72,7 +72,7 @@ export default function DashboardHeader() {
                   {isActive && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute inset-0 bg-indigo-50 rounded-xl border border-indigo-200 -z-10"
+                      className="absolute inset-0 bg-blue-50 rounded-xl border border-blue-200 -z-10"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -97,7 +97,7 @@ export default function DashboardHeader() {
                 onClick={() => setShowMenu(!showMenu)}
                 className="flex items-center gap-3 hover:bg-slate-100 rounded-xl px-3 py-2 transition-all cursor-pointer group"
               >
-                <div className="w-11 h-11 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:shadow-indigo-500/50 transition-all">
+                <div className="w-11 h-11 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30 group-hover:shadow-blue-600/50 transition-all">
                   <span className="text-white font-bold text-sm">
                     {user.firstName[0]}{user.lastName[0]}
                   </span>
@@ -119,9 +119,9 @@ export default function DashboardHeader() {
                     transition={{ duration: 0.2 }}
                     className="absolute right-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden"
                   >
-                    <div className="p-5 border-b border-slate-200 bg-gradient-to-br from-indigo-50 to-purple-50">
+                    <div className="p-5 border-b border-slate-200 bg-gradient-to-br from-blue-50 to-sky-50">
                       <div className="flex items-center gap-3 mb-3">
-                        <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
                           <span className="text-white font-bold">
                             {user.firstName[0]}{user.lastName[0]}
                           </span>
@@ -132,7 +132,7 @@ export default function DashboardHeader() {
                         </div>
                       </div>
                       <div className="bg-slate-100 backdrop-blur-sm rounded-lg p-2 text-xs text-slate-600 flex items-center gap-1">
-                        <i className="ri-shield-check-line text-indigo-600"></i>
+                        <i className="ri-shield-check-line text-blue-600"></i>
                         <span>Verifiziertes Konto</span>
                       </div>
                     </div>
@@ -143,10 +143,10 @@ export default function DashboardHeader() {
                           navigate('/dashboard/profil');
                           setShowMenu(false);
                         }}
-                        className="w-full px-5 py-3 text-left text-sm text-slate-700 hover:bg-indigo-50 flex items-center gap-3 transition-all cursor-pointer whitespace-nowrap group"
+                        className="w-full px-5 py-3 text-left text-sm text-slate-700 hover:bg-blue-50 flex items-center gap-3 transition-all cursor-pointer whitespace-nowrap group"
                       >
-                        <div className="w-9 h-9 bg-slate-100 group-hover:bg-indigo-100 rounded-lg flex items-center justify-center transition-colors">
-                          <i className="ri-user-line text-lg text-slate-500 group-hover:text-indigo-600"></i>
+                        <div className="w-9 h-9 bg-slate-100 group-hover:bg-blue-100 rounded-lg flex items-center justify-center transition-colors">
+                          <i className="ri-user-line text-lg text-slate-500 group-hover:text-blue-600"></i>
                         </div>
                         <div>
                           <p className="font-semibold text-slate-800">Mein Profil</p>
@@ -159,10 +159,10 @@ export default function DashboardHeader() {
                           navigate('/');
                           setShowMenu(false);
                         }}
-                        className="w-full px-5 py-3 text-left text-sm text-slate-700 hover:bg-indigo-50 flex items-center gap-3 transition-all cursor-pointer whitespace-nowrap group"
+                        className="w-full px-5 py-3 text-left text-sm text-slate-700 hover:bg-blue-50 flex items-center gap-3 transition-all cursor-pointer whitespace-nowrap group"
                       >
-                        <div className="w-9 h-9 bg-slate-100 group-hover:bg-indigo-100 rounded-lg flex items-center justify-center transition-colors">
-                          <i className="ri-home-line text-lg text-slate-500 group-hover:text-indigo-600"></i>
+                        <div className="w-9 h-9 bg-slate-100 group-hover:bg-blue-100 rounded-lg flex items-center justify-center transition-colors">
+                          <i className="ri-home-line text-lg text-slate-500 group-hover:text-blue-600"></i>
                         </div>
                         <div>
                           <p className="font-semibold text-slate-800">Zur Startseite</p>
@@ -214,12 +214,12 @@ export default function DashboardHeader() {
                     }}
                     className={`w-full flex items-center gap-3 px-4 py-3.5 rounded-xl text-sm font-medium transition-all ${
                       isActive
-                        ? 'bg-indigo-50 text-indigo-600 border border-indigo-200'
+                        ? 'bg-blue-50 text-blue-600 border border-blue-200'
                         : 'text-slate-600 hover:bg-slate-100'
                     }`}
                   >
                     <div className={`w-9 h-9 rounded-lg flex items-center justify-center ${
-                      isActive ? 'bg-indigo-100' : 'bg-slate-100'
+                      isActive ? 'bg-blue-100' : 'bg-slate-100'
                     }`}>
                       <i className={`${item.icon} text-lg`}></i>
                     </div>

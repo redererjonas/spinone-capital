@@ -9,7 +9,7 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 p-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -26,7 +26,7 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
 
             <div className="text-center">
               {/* Icon */}
-              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-500/30">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-blue-600/30">
                 <i className="ri-phone-line text-4xl text-white"></i>
               </div>
 
@@ -37,21 +37,21 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
 
               {/* Description */}
               <p className="text-slate-600 mb-6">
-                Unser Expertenteam steht Ihnen personlich zur Verfugung. Wir beraten Sie gerne zu Ihrer nachsten Investition.
+                Unser Expertenteam steht Ihnen persönlich zur Verfügung. Wir beraten Sie gerne zu Ihrer nächsten Investition.
               </p>
 
               {/* Phone Number */}
-              <div className="bg-indigo-50 rounded-xl p-6 mb-6 border border-indigo-200">
-                <p className="text-sm text-cyan-600 mb-2 font-medium">Unsere Servicenummer</p>
+              <div className="bg-blue-50 rounded-xl p-6 mb-6 border border-blue-200">
+                <p className="text-sm text-blue-600 mb-2 font-medium">Unsere Servicenummer</p>
                 <a
                   href="tel:+4989588088170"
-                  className="text-3xl font-bold text-slate-800 hover:text-cyan-600 transition-colors"
+                  className="text-3xl font-bold text-slate-800 hover:text-blue-600 transition-colors"
                 >
                   +49 (0)89 588088170
                 </a>
                 <div className="mt-4 flex items-center justify-center gap-4 text-sm text-slate-600">
                   <div className="flex items-center gap-1">
-                    <i className="ri-time-line text-cyan-500"></i>
+                    <i className="ri-time-line text-blue-500"></i>
                     <span>Mo-Fr: 9:00 - 18:00</span>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
                   href="mailto:info@spinone-asset.com"
                   className="bg-slate-100 hover:bg-slate-200 rounded-xl p-4 transition-colors group"
                 >
-                  <i className="ri-mail-line text-2xl text-slate-500 group-hover:text-cyan-500 transition-colors mb-2 block"></i>
+                  <i className="ri-mail-line text-2xl text-slate-500 group-hover:text-blue-500 transition-colors mb-2 block"></i>
                   <p className="text-sm font-medium text-slate-700">E-Mail</p>
                   <p className="text-xs text-slate-500">info@spinone-asset.com</p>
                 </a>
@@ -82,9 +82,9 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
               {/* Close Button */}
               <button
                 onClick={onClose}
-                className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white py-3.5 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 cursor-pointer"
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3.5 rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 cursor-pointer"
               >
-                Schliessen
+                Schließen
               </button>
             </div>
           </motion.div>

@@ -27,11 +27,11 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
   const getGradient = (type: string) => {
     switch (type) {
       case 'festgeld':
-        return 'from-indigo-500 to-indigo-600';
+        return 'from-blue-600 to-blue-700';
       case 'flexgeld':
-        return 'from-purple-500 to-purple-600';
+        return 'from-blue-500 to-blue-600';
       case 'tagesgeld':
-        return 'from-cyan-500 to-cyan-600';
+        return 'from-sky-500 to-sky-600';
       case 'aktien':
         return 'from-emerald-500 to-emerald-600';
       case 'anleihen':
@@ -44,11 +44,11 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
   const getBorderColor = (type: string) => {
     switch (type) {
       case 'festgeld':
-        return 'border-indigo-500/30 hover:border-indigo-500/50';
+        return 'border-blue-500/30 hover:border-blue-500/50';
       case 'flexgeld':
-        return 'border-purple-500/30 hover:border-purple-500/50';
+        return 'border-blue-400/30 hover:border-blue-400/50';
       case 'tagesgeld':
-        return 'border-cyan-500/30 hover:border-cyan-500/50';
+        return 'border-sky-500/30 hover:border-sky-500/50';
       case 'aktien':
         return 'border-emerald-500/30 hover:border-emerald-500/50';
       case 'anleihen':
@@ -177,7 +177,7 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
                   <div className="mb-6">
                     <div className="flex items-center justify-between text-xs text-slate-600 mb-2 font-medium">
                       <span>Laufzeit-Fortschritt</span>
-                      <span className="font-bold text-cyan-600">{progress.toFixed(0)}%</span>
+                      <span className="font-bold text-blue-600">{progress.toFixed(0)}%</span>
                     </div>
                     <div className="h-2.5 bg-slate-200 rounded-full overflow-hidden">
                       <motion.div
@@ -204,7 +204,7 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
                     </div>
                     <div className="bg-slate-50 rounded-xl p-3 border border-slate-200">
                       <div className="flex items-center gap-2 mb-1.5">
-                        <i className="ri-calendar-event-line text-indigo-500"></i>
+                        <i className="ri-calendar-event-line text-blue-500"></i>
                         <p className="text-xs text-slate-500 font-medium">Ende</p>
                       </div>
                       <p className="text-sm font-bold text-slate-800">
@@ -214,10 +214,10 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
                   </div>
 
                   {/* Remaining Days */}
-                  <div className="bg-indigo-50 rounded-xl p-4 mb-4 border border-indigo-200">
+                  <div className="bg-blue-50 rounded-xl p-4 mb-4 border border-blue-200">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-11 h-11 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                        <div className="w-11 h-11 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30">
                           <i className="ri-time-line text-xl text-white"></i>
                         </div>
                         <div>
@@ -227,7 +227,7 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
                           </p>
                         </div>
                       </div>
-                      <i className="ri-arrow-right-line text-2xl text-cyan-500 group-hover:translate-x-2 transition-transform"></i>
+                      <i className="ri-arrow-right-line text-2xl text-blue-500 group-hover:translate-x-2 transition-transform"></i>
                     </div>
                   </div>
 
@@ -256,7 +256,7 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
       {inactiveInvestments.length > 0 && (
         <div>
           <h3 className="text-lg font-heading font-bold text-slate-600 mb-4 flex items-center gap-2">
-            <i className="ri-add-circle-line text-cyan-500"></i>
+            <i className="ri-add-circle-line text-blue-500"></i>
             Weitere Anlageprodukte entdecken
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -285,11 +285,11 @@ export default function InvestmentCards({ investments }: InvestmentCardsProps) {
                     </div>
                   </div>
                   <p className="text-sm text-slate-600 mb-4">
-                    Erfahren Sie mehr uber unsere {getTypeName(investment.type)}-Angebote und profitieren Sie von attraktiven Konditionen.
+                    Erfahren Sie mehr über unsere {getTypeName(investment.type)}-Angebote und profitieren Sie von attraktiven Konditionen.
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-cyan-600 font-semibold text-sm">Mehr erfahren</span>
-                    <i className="ri-arrow-right-line text-cyan-500 group-hover:translate-x-2 transition-transform"></i>
+                    <span className="text-blue-600 font-semibold text-sm">Mehr erfahren</span>
+                    <i className="ri-arrow-right-line text-blue-500 group-hover:translate-x-2 transition-transform"></i>
                   </div>
                 </Link>
               </motion.div>

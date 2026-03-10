@@ -10,12 +10,12 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --primary: #6366F1;
-            --primary-dark: #4F46E5;
-            --primary-light: #818CF8;
-            --secondary: #A855F7;
-            --accent-cyan: #06B6D4;
-            --accent-cyan-light: #22D3EE;
+            --primary: #2563EB;
+            --primary-dark: #1D4ED8;
+            --primary-light: #3B82F6;
+            --secondary: #3B82F6;
+            --accent-cyan: #0EA5E9;
+            --accent-cyan-light: #38BDF8;
             --text-dark: #0F172A;
             --text-light: #475569;
             --text-muted: #64748B;
@@ -40,7 +40,7 @@
 
         .btn { padding: 10px 20px; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 8px; transition: all 0.3s; font-size: 14px; font-family: 'Inter', sans-serif; }
         .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3); }
         .btn-secondary { background: linear-gradient(135deg, var(--accent-cyan), var(--primary)); color: white; }
         .btn-success { background: linear-gradient(135deg, var(--success), #059669); color: white; }
 
@@ -48,7 +48,7 @@
         .form-group { display: flex; flex-direction: column; gap: 5px; }
         .form-label { font-size: 12px; font-weight: 600; color: var(--text-light); }
         .form-input { padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; transition: all 0.3s; font-family: 'Inter', sans-serif; background: var(--bg-white); color: var(--text-dark); }
-        .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15); }
+        .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
         .form-textarea { min-height: 60px; resize: vertical; }
 
         .table-manager { margin-top: 20px; padding-top: 20px; border-top: 2px solid var(--border); }
@@ -72,7 +72,7 @@
         .company-section { display: flex; align-items: center; gap: 12px; }
         .logo-container { position: relative; }
         .logo-glow { position: absolute; inset: 0; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-light)); border-radius: 12px; filter: blur(10px); opacity: 0.5; }
-        .logo { position: relative; width: 48px; height: 48px; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-light)); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3); }
+        .logo { position: relative; width: 48px; height: 48px; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-light)); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3); }
         .logo span { font-size: 26px; font-weight: 800; font-family: 'Manrope', sans-serif; color: white; }
         .company-name { font-size: 22px; font-weight: 800; font-family: 'Manrope', sans-serif; margin: 0; }
         .company-tagline { font-size: 10px; color: var(--accent-cyan-light); font-weight: 600; margin: 2px 0 0; }
@@ -92,7 +92,7 @@
         .info-title i { color: var(--primary); }
         .info-text { font-size: 12px; line-height: 1.6; color: var(--text-light); }
 
-        .highlight-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 14px; border-radius: 12px; text-align: center; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3); }
+        .highlight-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 14px; border-radius: 12px; text-align: center; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3); }
         .highlight-value { font-size: 31px; font-weight: 800; font-family: 'Manrope', sans-serif; }
         .highlight-label { font-size: 10.8px; margin-top: 4px; opacity: 0.95; }
         .highlight-sublabel { font-size: 10.8px; margin-top: 6px; padding-top: 6px; border-top: 1px solid rgba(255, 255, 255, 0.3); font-weight: 600; }
@@ -108,7 +108,7 @@
         .data-table th { padding: 9px 10px; text-align: left; font-weight: 600; font-size: 10.8px; }
         .data-table td { padding: 9px 10px; border-bottom: 1px solid var(--border); color: var(--text-dark); background: var(--bg-white); }
         .data-table tbody tr:nth-child(even) td { background: var(--bg-light); }
-        .data-table tbody tr:first-child td { background: linear-gradient(90deg, rgba(99, 102, 241, 0.08) 0%, transparent 100%); }
+        .data-table tbody tr:first-child td { background: linear-gradient(90deg, rgba(37, 99, 235, 0.08) 0%, transparent 100%); }
         .best-rate { color: var(--primary); font-weight: 700; }
 
         .rating-badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 9px; font-weight: 600; }
@@ -133,7 +133,7 @@
 
         .footer { position: absolute; bottom: 0; left: 0; right: 0; background: var(--bg-subtle); padding: 8px 15mm; border-top: 1px solid var(--border); font-size: 8px; color: var(--text-muted); display: flex; justify-content: space-between; align-items: center; }
 
-        .notification { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border-radius: 10px; font-size: 14px; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); z-index: 1000; animation: slideIn 0.3s ease; }
+        .notification { position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border-radius: 10px; font-size: 14px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); z-index: 1000; animation: slideIn 0.3s ease; }
         @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 
         @media print {
@@ -168,19 +168,19 @@
         </div>
 
         <div class="form-grid" style="margin-top: 15px;">
-            <div class="form-group"><label class="form-label">Marktueberblick</label><textarea class="form-input form-textarea" id="marktueberblick">Der Anleihenmarkt bietet aktuell attraktive Renditen bei ueberschaubarem Risiko. Staatsanleihen und Unternehmensanleihen mit Investment-Grade-Rating sind besonders gefragt.</textarea></div>
-            <div class="form-group"><label class="form-label">Risiko & Sicherheit</label><textarea class="form-input form-textarea" id="risikoSicherheit">Anleihen bieten planbare Ertraege und geringere Volatilitaet als Aktien. Unsere Auswahl konzentriert sich auf Emittenten mit soliden Ratings.</textarea></div>
-            <div class="form-group"><label class="form-label">Empfehlung</label><textarea class="form-input form-textarea" id="empfehlung">Die Deutsche Telekom Anleihe 2030 bietet mit 4,5% Kupon und AA-Rating ein exzellentes Chance-Risiko-Verhaeltnis.</textarea></div>
+            <div class="form-group"><label class="form-label">Marktüberblick</label><textarea class="form-input form-textarea" id="marktueberblick">Der Anleihenmarkt bietet aktuell attraktive Renditen bei überschaubarem Risiko. Staatsanleihen und Unternehmensanleihen mit Investment-Grade-Rating sind besonders gefragt.</textarea></div>
+            <div class="form-group"><label class="form-label">Risiko & Sicherheit</label><textarea class="form-input form-textarea" id="risikoSicherheit">Anleihen bieten planbare Erträge und geringere Volatilität als Aktien. Unsere Auswahl konzentriert sich auf Emittenten mit soliden Ratings.</textarea></div>
+            <div class="form-group"><label class="form-label">Empfehlung</label><textarea class="form-input form-textarea" id="empfehlung">Die Deutsche Telekom Anleihe 2030 bietet mit 4,5% Kupon und AA-Rating ein exzellentes Chance-Risiko-Verhältnis.</textarea></div>
         </div>
 
         <div class="table-manager">
             <h3 class="panel-title" style="font-size: 16px; margin-bottom: 10px;"><i class="ri-table-line"></i> Anleihen-Tabelle verwalten</h3>
             <div class="table-controls">
-                <button class="btn btn-success btn-small" onclick="dokumentManager.zeileHinzufuegen()"><i class="ri-add-line"></i> Zeile hinzufuegen</button>
+                <button class="btn btn-success btn-small" onclick="dokumentManager.zeileHinzufuegen()"><i class="ri-add-line"></i> Zeile hinzufügen</button>
                 <button class="btn btn-primary btn-small" onclick="dokumentManager.zeileEntfernen()"><i class="ri-subtract-line"></i> Letzte Zeile entfernen</button>
             </div>
             <table class="editable-table" id="bankenTabelle">
-                <thead><tr><th>Emittent</th><th>Kupon</th><th>Laufzeit</th><th>Rendite</th><th>Rating</th><th>Stueckelung</th><th>Waehrung</th></tr></thead>
+                <thead><tr><th>Emittent</th><th>Kupon</th><th>Laufzeit</th><th>Rendite</th><th>Rating</th><th>Stückelung</th><th>Währung</th></tr></thead>
                 <tbody id="tabelleBody"></tbody>
             </table>
         </div>
@@ -207,12 +207,12 @@
         <div class="content">
             <div class="overview">
                 <div class="info-card">
-                    <h3 class="info-title"><i class="ri-stock-line"></i> Anleihenmarkt Ueberblick</h3>
-                    <p class="info-text" id="output-marktueberblick">Der Anleihenmarkt bietet aktuell attraktive Renditen bei ueberschaubarem Risiko.</p>
+                    <h3 class="info-title"><i class="ri-stock-line"></i> Anleihenmarkt Überblick</h3>
+                    <p class="info-text" id="output-marktueberblick">Der Anleihenmarkt bietet aktuell attraktive Renditen bei überschaubarem Risiko.</p>
                     <div class="feature-list">
                         <span class="feature-badge"><i class="ri-shield-check-line"></i> Investment Grade</span>
                         <span class="feature-badge"><i class="ri-calendar-check-line"></i> Feste Laufzeit</span>
-                        <span class="feature-badge"><i class="ri-percent-line"></i> Planbare Ertraege</span>
+                        <span class="feature-badge"><i class="ri-percent-line"></i> Planbare Erträge</span>
                     </div>
                 </div>
                 <div class="highlight-card">
@@ -229,7 +229,7 @@
 
             <div class="info-card" style="margin: 10px 0;">
                 <h3 class="info-title"><i class="ri-shield-star-line"></i> Risiko & Sicherheit</h3>
-                <p class="info-text" id="output-risikoSicherheit">Anleihen bieten planbare Ertraege und geringere Volatilitaet als Aktien.</p>
+                <p class="info-text" id="output-risikoSicherheit">Anleihen bieten planbare Erträge und geringere Volatilität als Aktien.</p>
             </div>
 
             <div class="bottom-grid">
@@ -250,11 +250,11 @@
                 <div class="recommendation-card">
                     <h4 class="card-title"><i class="ri-lightbulb-line"></i> Unsere Top-Empfehlung</h4>
                     <div class="card-text">
-                        <p id="output-empfehlung">Die Deutsche Telekom Anleihe 2030 bietet mit 4,5% Kupon und AA-Rating ein exzellentes Chance-Risiko-Verhaeltnis.</p>
+                        <p id="output-empfehlung">Die Deutsche Telekom Anleihe 2030 bietet mit 4,5% Kupon und AA-Rating ein exzellentes Chance-Risiko-Verhältnis.</p>
                         <p style="margin-top: 6px;">
                             <strong><i class="ri-check-line"></i> Feste Kupons</strong><br>
                             <strong><i class="ri-check-line"></i> Solide Ratings</strong><br>
-                            <strong><i class="ri-check-line"></i> Planbare Ertraege</strong>
+                            <strong><i class="ri-check-line"></i> Planbare Erträge</strong>
                         </p>
                     </div>
                 </div>
@@ -275,10 +275,10 @@
                 ['Siemens AG', '3,75%', '2028', '3,5%', 'A+', '1.000 EUR', 'EUR'],
                 ['BMW Finance NV', '4,25%', '2029', '4,0%', 'A', '1.000 EUR', 'EUR'],
                 ['Volkswagen Intl Finance', '5,00%', '2031', '5,2%', 'BBB+', '1.000 EUR', 'EUR'],
-                ['EIB (Europaeische Investitionsbank)', '3,00%', '2033', '3,1%', 'AAA', '1.000 EUR', 'EUR']
+                ['EIB (Europäische Investitionsbank)', '3,00%', '2033', '3,1%', 'AAA', '1.000 EUR', 'EUR']
             ],
 
-            tabellenHeader: ['Emittent', 'Kupon', 'Laufzeit', 'Rendite', 'Rating', 'Stueckelung', 'Waehrung'],
+            tabellenHeader: ['Emittent', 'Kupon', 'Laufzeit', 'Rendite', 'Rating', 'Stückelung', 'Währung'],
 
             init: function() { this.erstelleEditierbareTabelle(); this.erstelleAusgabeTabelle(); this.bindEvents(); this.ladeGespeicherteDaten(); },
 
@@ -347,8 +347,8 @@
 
             zeileHinzufuegen: function() { this.tabellenDaten.push(['Neuer Emittent', '0,00%', '2030', '0,0%', 'A', '1.000 EUR', 'EUR']); this.erstelleEditierbareTabelle(); this.aktualisieren(); },
             zeileEntfernen: function() { if (this.tabellenDaten.length > 1) { this.tabellenDaten.pop(); this.erstelleEditierbareTabelle(); this.aktualisieren(); } else { this.benachrichtigung('Mindestens eine Zeile muss vorhanden sein', 'error'); } },
-            drucken: function() { window.print(); this.benachrichtigung('Druckdialog geoeffnet', 'info'); },
-            alsPDF: function() { window.print(); this.benachrichtigung('Waehlen Sie "Als PDF speichern" im Druckdialog', 'info'); },
+            drucken: function() { window.print(); this.benachrichtigung('Druckdialog geöffnet', 'info'); },
+            alsPDF: function() { window.print(); this.benachrichtigung('Wählen Sie "Als PDF speichern" im Druckdialog', 'info'); },
 
             speichern: function() {
                 const daten = { felder: {}, tabelle: this.tabellenDaten };
@@ -370,7 +370,7 @@
             benachrichtigung: function(text, typ = 'info') {
                 const notification = document.createElement('div');
                 notification.className = 'notification';
-                notification.style.background = typ === 'success' ? 'linear-gradient(135deg, #10b981, #059669)' : typ === 'error' ? 'linear-gradient(135deg, #ef4444, #dc2626)' : 'linear-gradient(135deg, #6366F1, #A855F7)';
+                notification.style.background = typ === 'success' ? 'linear-gradient(135deg, #10b981, #059669)' : typ === 'error' ? 'linear-gradient(135deg, #ef4444, #dc2626)' : 'linear-gradient(135deg, #2563EB, #3B82F6)';
                 notification.textContent = text;
                 document.body.appendChild(notification);
                 setTimeout(() => { notification.style.animation = 'slideOut 0.3s ease'; setTimeout(() => notification.remove(), 300); }, 3000);

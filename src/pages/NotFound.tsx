@@ -5,8 +5,8 @@ export default function NotFound() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-[#020617] relative flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-      {/* Animated Background */}
+    <div className="min-h-screen bg-white relative flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+      {/* Subtle Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           animate={{
@@ -18,7 +18,7 @@ export default function NotFound() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-[#6366F1]/30 to-[#A855F7]/30 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-primary-100/40 to-blue-100/40 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -30,7 +30,7 @@ export default function NotFound() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-[#06B6D4]/30 to-[#6366F1]/30 rounded-full blur-3xl"
+          className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-sky-100/40 to-primary-100/40 rounded-full blur-3xl"
         />
       </div>
 
@@ -39,7 +39,7 @@ export default function NotFound() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="absolute text-[15rem] md:text-[20rem] font-black text-white/5 select-none pointer-events-none z-0"
+        className="absolute text-[15rem] md:text-[20rem] font-black text-slate-100 select-none pointer-events-none z-0"
       >
         404
       </motion.h1>
@@ -53,7 +53,7 @@ export default function NotFound() {
           transition={{ delay: 0.2 }}
           className="mb-8"
         >
-          <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#6366F1] to-[#A855F7] rounded-3xl flex items-center justify-center shadow-xl shadow-[#6366F1]/30">
+          <div className="w-24 h-24 mx-auto bg-gradient-to-br from-primary-500 to-primary-700 rounded-3xl flex items-center justify-center shadow-xl shadow-primary-500/20">
             <i className="ri-file-unknow-line text-5xl text-white"></i>
           </div>
         </motion.div>
@@ -63,7 +63,7 @@ export default function NotFound() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="text-3xl md:text-4xl font-bold text-white mb-4"
+          className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
         >
           Seite nicht gefunden
         </motion.h2>
@@ -75,8 +75,8 @@ export default function NotFound() {
           transition={{ delay: 0.4 }}
           className="mb-6"
         >
-          <p className="text-white/60 mb-2">Die angeforderte Seite existiert nicht:</p>
-          <code className="inline-block px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-[#06B6D4] font-mono text-sm">
+          <p className="text-slate-500 mb-2">Die angeforderte Seite existiert nicht:</p>
+          <code className="inline-block px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-primary-600 font-mono text-sm">
             {location.pathname}
           </code>
         </motion.div>
@@ -86,9 +86,9 @@ export default function NotFound() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-white/60 text-lg mb-8 max-w-md mx-auto"
+          className="text-slate-500 text-lg mb-8 max-w-md mx-auto"
         >
-          Die Seite, die Sie suchen, wurde moglicherweise entfernt, umbenannt oder ist vorubergehend nicht verfugbar.
+          Die Seite, die Sie suchen, wurde möglicherweise entfernt, umbenannt oder ist vorübergehend nicht verfügbar.
         </motion.p>
 
         {/* Actions */}
@@ -100,7 +100,7 @@ export default function NotFound() {
         >
           <Link
             to="/"
-            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-[#6366F1] to-[#A855F7] text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-[#6366F1]/25 transition-all duration-300"
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-300"
           >
             <i className="ri-home-line text-xl"></i>
             <span>Zur Startseite</span>
@@ -108,7 +108,7 @@ export default function NotFound() {
 
           <Link
             to="/kontakt"
-            className="inline-flex items-center space-x-2 px-6 py-3 bg-white/5 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-slate-50 border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-100 transition-all duration-300"
           >
             <i className="ri-customer-service-2-line text-xl"></i>
             <span>Kontakt</span>
@@ -120,20 +120,20 @@ export default function NotFound() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="mt-12 pt-8 border-t border-white/10"
+          className="mt-12 pt-8 border-t border-slate-200"
         >
-          <p className="text-white/40 text-sm mb-4">Vielleicht interessieren Sie sich fur:</p>
+          <p className="text-slate-400 text-sm mb-4">Vielleicht interessieren Sie sich für:</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { label: 'Leistungen', path: '/leistungen' },
-              { label: 'Uber uns', path: '/about' },
+              { label: 'Über uns', path: '/about' },
               { label: 'Blog', path: '/blog' },
-              { label: 'Markte', path: '/maerkte' },
+              { label: 'Märkte', path: '/maerkte' },
             ].map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white/70 text-sm hover:bg-white/10 hover:text-white transition-all duration-300"
+                className="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-600 text-sm hover:bg-slate-100 hover:text-slate-900 transition-all duration-300"
               >
                 {link.label}
               </Link>

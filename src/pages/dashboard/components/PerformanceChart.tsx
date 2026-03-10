@@ -24,7 +24,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
   if (activeInvestments.length === 0 || totalInvested === 0) {
     return (
       <div className="bg-white shadow-lg rounded-3xl border border-slate-200 overflow-hidden">
-        <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 p-8 text-white relative overflow-hidden">
+        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 p-8 text-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
           <div className="relative z-10">
             <div className="flex items-center gap-3 mb-3">
@@ -41,7 +41,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
           </div>
           <h3 className="text-xl font-bold text-slate-700 mb-2">Noch keine Performance-Daten</h3>
           <p className="text-slate-500">
-            Ihre Performance-Entwicklung wird hier angezeigt, sobald Ihre Investitionen Ertrage generieren.
+            Ihre Performance-Entwicklung wird hier angezeigt, sobald Ihre Investitionen Erträge generieren.
           </p>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
   return (
     <div className="bg-white shadow-lg rounded-3xl border border-slate-200 overflow-hidden">
       {/* Header */}
-      <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 p-8 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 p-8 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full -ml-24 -mb-24"></div>
 
@@ -163,7 +163,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
                   onClick={() => setTimeRange(range.value)}
                   className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all whitespace-nowrap cursor-pointer ${
                     timeRange === range.value
-                      ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/30'
+                      ? 'bg-blue-600 text-white shadow-lg shadow-sky-500/30'
                       : 'text-white/80 hover:bg-white/10'
                   }`}
                 >
@@ -178,9 +178,9 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
       <div className="p-8">
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-          <div className="bg-indigo-50 rounded-xl p-5 border border-indigo-200">
+          <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/30">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-lg shadow-blue-600/30">
                 <i className="ri-wallet-3-line text-xl text-white"></i>
               </div>
               <p className="text-sm text-slate-600 font-medium">Investiert</p>
@@ -193,9 +193,9 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
             </p>
           </div>
 
-          <div className="bg-cyan-50 rounded-xl p-5 border border-cyan-200">
+          <div className="bg-sky-50 rounded-xl p-5 border border-sky-200">
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/30">
+              <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-sky-500/30">
                 <i className="ri-percent-line text-xl text-white"></i>
               </div>
               <p className="text-sm text-slate-600 font-medium">Durchschnitt Zinssatz</p>
@@ -228,7 +228,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
         {activeInvestments.length > 1 && (
           <div className="mb-8 p-4 bg-slate-50 rounded-xl border border-slate-200">
             <h4 className="text-sm font-bold text-slate-700 mb-3 flex items-center gap-2">
-              <i className="ri-list-check text-cyan-500"></i>
+              <i className="ri-list-check text-blue-500"></i>
               Einzelne Positionen
             </h4>
             <div className="space-y-2">
@@ -253,7 +253,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
                 return (
                   <div key={inv.id} className="flex items-center justify-between bg-white rounded-lg p-3 border border-slate-200 shadow-sm">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center text-white text-xs font-bold">
+                      <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center text-white text-xs font-bold">
                         {index + 1}
                       </div>
                       <div>
@@ -286,12 +286,12 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
             <AreaChart data={monthlyData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
               <defs>
                 <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#6366F1" stopOpacity={0.4} />
-                  <stop offset="95%" stopColor="#6366F1" stopOpacity={0} />
+                  <stop offset="5%" stopColor="#2563EB" stopOpacity={0.4} />
+                  <stop offset="95%" stopColor="#2563EB" stopOpacity={0} />
                 </linearGradient>
                 <linearGradient id="colorInvested" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#06B6D4" stopOpacity={0.2} />
-                  <stop offset="95%" stopColor="#06B6D4" stopOpacity={0} />
+                  <stop offset="5%" stopColor="#0EA5E9" stopOpacity={0.2} />
+                  <stop offset="95%" stopColor="#0EA5E9" stopOpacity={0} />
                 </linearGradient>
               </defs>
               <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" />
@@ -316,7 +316,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
                 type="monotone"
                 dataKey="invested"
                 name="Investiert"
-                stroke="#06B6D4"
+                stroke="#0EA5E9"
                 strokeWidth={2}
                 fillOpacity={1}
                 fill="url(#colorInvested)"
@@ -325,7 +325,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
                 type="monotone"
                 dataKey="value"
                 name="Portfoliowert"
-                stroke="#6366F1"
+                stroke="#2563EB"
                 strokeWidth={3}
                 fillOpacity={1}
                 fill="url(#colorValue)"
@@ -338,16 +338,16 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
         <div className="pt-6 border-t border-slate-200">
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-gradient-to-br from-indigo-500 to-purple-600 rounded"></div>
+              <div className="w-4 h-4 bg-gradient-to-br from-blue-600 to-blue-700 rounded"></div>
               <span className="text-sm text-slate-600 font-medium">Portfoliowert</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-gradient-to-br from-cyan-500 to-blue-600 rounded"></div>
+              <div className="w-4 h-4 bg-gradient-to-br from-sky-500 to-blue-600 rounded"></div>
               <span className="text-sm text-slate-600 font-medium">Investiertes Kapital</span>
             </div>
             <div className="flex items-center gap-2">
-              <i className="ri-information-line text-cyan-500"></i>
-              <span className="text-sm text-slate-500">Hover fur Details</span>
+              <i className="ri-information-line text-blue-500"></i>
+              <span className="text-sm text-slate-500">Hover für Details</span>
             </div>
           </div>
         </div>

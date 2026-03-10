@@ -36,9 +36,9 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
 
   const getGradient = (type: string) => {
     const gradients: Record<string, string> = {
-      festgeld: 'from-indigo-500 to-indigo-600',
-      flexgeld: 'from-purple-500 to-purple-600',
-      tagesgeld: 'from-cyan-500 to-cyan-600',
+      festgeld: 'from-blue-600 to-blue-700',
+      flexgeld: 'from-blue-500 to-blue-600',
+      tagesgeld: 'from-sky-500 to-sky-600',
       aktien: 'from-emerald-500 to-emerald-600',
       anleihen: 'from-amber-500 to-amber-600'
     };
@@ -47,9 +47,9 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
 
   const getBorderColor = (type: string) => {
     const colors: Record<string, string> = {
-      festgeld: 'border-indigo-500/30 hover:border-indigo-500/50',
-      flexgeld: 'border-purple-500/30 hover:border-purple-500/50',
-      tagesgeld: 'border-cyan-500/30 hover:border-cyan-500/50',
+      festgeld: 'border-blue-500/30 hover:border-blue-500/50',
+      flexgeld: 'border-blue-400/30 hover:border-blue-400/50',
+      tagesgeld: 'border-sky-500/30 hover:border-sky-500/50',
       aktien: 'border-emerald-500/30 hover:border-emerald-500/50',
       anleihen: 'border-amber-500/30 hover:border-amber-500/50'
     };
@@ -87,7 +87,7 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
   return (
     <div className="bg-white shadow-lg rounded-3xl border border-slate-200 overflow-hidden">
       {/* Header */}
-      <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 p-8 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 p-8 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full -ml-24 -mb-24"></div>
 
@@ -96,10 +96,10 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
             <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
               <i className="ri-pie-chart-line text-2xl"></i>
             </div>
-            <h2 className="text-2xl font-heading font-bold">Portfolio-Ubersicht</h2>
+            <h2 className="text-2xl font-heading font-bold">Portfolio-Übersicht</h2>
           </div>
           <p className="text-white/80 text-base">
-            Alle Ihre Investitionen im Uberblick
+            Alle Ihre Investitionen im Überblick
           </p>
         </div>
       </div>
@@ -181,7 +181,7 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
                     <div className="mb-4">
                       <div className="flex items-center justify-between text-xs text-slate-600 mb-1.5">
                         <span className="font-medium">Fortschritt</span>
-                        <span className="font-bold text-cyan-600">{progress.toFixed(0)}%</span>
+                        <span className="font-bold text-blue-600">{progress.toFixed(0)}%</span>
                       </div>
                       <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
                         <motion.div
@@ -210,14 +210,14 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
                     <div className="bg-slate-100 rounded-lg p-2 border border-slate-200">
                       <div className="flex items-center justify-between text-xs">
                         <span className="text-slate-600">Portfolio-Anteil</span>
-                        <span className="font-bold text-cyan-600">{percentage.toFixed(1)}%</span>
+                        <span className="font-bold text-blue-600">{percentage.toFixed(1)}%</span>
                       </div>
                     </div>
 
                     {/* Details Link */}
                     <div className="mt-3 pt-3 border-t border-slate-200 flex items-center justify-between">
                       <span className="text-xs text-slate-500 font-medium">Details ansehen</span>
-                      <i className="ri-arrow-right-line text-lg text-cyan-500 group-hover:translate-x-2 transition-transform"></i>
+                      <i className="ri-arrow-right-line text-lg text-blue-500 group-hover:translate-x-2 transition-transform"></i>
                     </div>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function PortfolioOverview({ investments }: PortfolioOverviewProp
         <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30">
                 <i className="ri-funds-line text-2xl text-white"></i>
               </div>
               <div>

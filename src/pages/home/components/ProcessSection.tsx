@@ -6,45 +6,45 @@ export default function ProcessSection() {
   const steps = [
     {
       number: '01',
-      title: 'Erstgesprach & Analyse',
+      title: 'Erstgespräch & Analyse',
       description: 'Wir analysieren Ihre Anlageziele, Risikobereitschaft und Ihren Anlagehorizont in einem persönlichen Beratungsgespräch.',
       icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z',
-      color: '#6366F1',
-      glowColor: '99, 102, 241'
+      color: '#2563EB',
+      glowColor: '37, 99, 235'
     },
     {
       number: '02',
       title: 'Strategieentwicklung',
-      description: 'Unsere Experten entwickeln eine massgeschneiderte Anlagestrategie mit optimaler Asset Allocation und Risikomanagement.',
+      description: 'Unsere Experten entwickeln eine maßgeschneiderte Anlagestrategie mit optimaler Asset Allocation und Risikomanagement.',
       icon: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z',
-      color: '#06B6D4',
-      glowColor: '6, 182, 212'
+      color: '#0EA5E9',
+      glowColor: '14, 165, 233'
     },
     {
       number: '03',
       title: 'Umsetzung & Investition',
       description: 'Nach Ihrer Freigabe setzen wir die Strategie professionell um. Alle Transaktionen werden transparent dokumentiert.',
       icon: 'M13 10V3L4 14h7v7l9-11h-7z',
-      color: '#A855F7',
-      glowColor: '168, 85, 247'
+      color: '#3B82F6',
+      glowColor: '59, 130, 246'
     },
     {
       number: '04',
       title: 'Monitoring & Reporting',
-      description: 'Kontinuierliche Uberwachung Ihrer Investments mit regelmassigen Reports und strategischen Anpassungen bei Bedarf.',
+      description: 'Kontinuierliche Überwachung Ihrer Investments mit regelmäßigen Reports und strategischen Anpassungen bei Bedarf.',
       icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z',
-      color: '#EC4899',
-      glowColor: '236, 72, 153'
+      color: '#0EA5E9',
+      glowColor: '14, 165, 233'
     }
   ];
 
   return (
-    <section className="relative py-24 bg-[#020617] overflow-hidden">
+    <section className="relative py-24 bg-slate-50 bg-filigree overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] bg-[#6366F1]/10 rounded-full blur-[250px]" />
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-[#A855F7]/10 rounded-full blur-[250px]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.02)_1px,transparent_1px)] bg-[size:80px_80px]" />
+        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] bg-primary-200/5 rounded-full blur-[250px]" />
+        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-primary-300/5 rounded-full blur-[250px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:80px_80px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -61,20 +61,20 @@ export default function ProcessSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="inline-flex items-center space-x-2 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 mb-6"
+            className="inline-flex items-center space-x-2 bg-primary-50 border border-primary-200 rounded-full px-6 py-3 mb-6"
           >
-            <svg className="w-5 h-5 text-[#6366F1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
             </svg>
-            <span className="text-sm font-bold text-white/90 uppercase tracking-wider">Unser Prozess</span>
+            <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Unser Prozess</span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Ihr Weg zur{' '}
-            <span className="bg-gradient-to-r from-[#6366F1] via-[#A855F7] to-[#EC4899] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-accent-cyan bg-clip-text text-transparent">
               erfolgreichen Anlage
             </span>
           </h2>
-          <p className="text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
             In vier transparenten Schritten zu Ihrer individuellen Anlagestrategie
           </p>
         </motion.div>
@@ -97,8 +97,7 @@ export default function ProcessSection() {
               )}
 
               <div
-                className="relative bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-500 p-8 h-full"
-                style={{ boxShadow: `0 0 40px rgba(${step.glowColor}, 0.08)` }}
+                className="relative bg-white rounded-2xl border border-slate-200 hover:border-primary-300 transition-all duration-500 p-8 h-full shadow-card hover:shadow-card-hover"
               >
                 {/* Top gradient line */}
                 <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={{ background: `linear-gradient(90deg, ${step.color}, ${step.color}60)` }} />
@@ -113,7 +112,7 @@ export default function ProcessSection() {
                   </div>
                   <div
                     className="w-10 h-10 rounded-lg flex items-center justify-center"
-                    style={{ background: `${step.color}15` }}
+                    style={{ background: `${step.color}12` }}
                   >
                     <svg className="w-5 h-5" style={{ color: step.color }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={step.icon} />
@@ -121,8 +120,8 @@ export default function ProcessSection() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                <p className="text-white/60 leading-relaxed text-sm">{step.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
+                <p className="text-slate-500 leading-relaxed text-sm">{step.description}</p>
               </div>
             </motion.div>
           ))}

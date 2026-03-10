@@ -6,7 +6,7 @@ import TeamValues from './components/TeamValues';
 
 export default function TeamPage() {
   return (
-    <div className="min-h-screen bg-[#020617]">
+    <div className="min-h-screen bg-white">
       <main>
         <TeamHero />
         <TeamGrid />
