@@ -18,10 +18,10 @@ export interface BlogPost {
 export const blogData: Record<number, BlogPost> = {
   1: {
     id: 1,
-    title: 'Zinswende 2024: Auswirkungen auf Anleihenportfolios',
+    title: 'Zinswende 2026: Auswirkungen auf Anleihenportfolios',
     excerpt: 'Eine detaillierte Analyse der aktuellen Zinspolitik der EZB und deren Implikationen für institutionelle Fixed-Income-Strategien.',
     content: [
-      'Die Europäische Zentralbank hat im Jahr 2024 eine bedeutende Zinswende eingeleitet, die weitreichende Auswirkungen auf institutionelle Anleihenportfolios hat. Nach Jahren der Niedrigzinspolitik markiert diese Entwicklung einen fundamentalen Paradigmenwechsel in der europäischen Geldpolitik.',
+      'Die Europäische Zentralbank hat im Jahr 2026 eine bedeutende Zinswende eingeleitet, die weitreichende Auswirkungen auf institutionelle Anleihenportfolios hat. Nach Jahren der Niedrigzinspolitik markiert diese Entwicklung einen fundamentalen Paradigmenwechsel in der europäischen Geldpolitik.',
       'Für institutionelle Investoren ergeben sich daraus sowohl Chancen als auch Herausforderungen. Die steigenden Zinsen führen zunächst zu Bewertungsverlusten bei bestehenden Anleihenbeständen, eröffnen jedoch gleichzeitig attraktive Reinvestitionsmöglichkeiten zu höheren Renditen.',
       'Besonders betroffen sind langlaufende Staatsanleihen und Unternehmensanleihen mit niedriger Bonität. Die Duration-Steuerung wird zum entscheidenden Erfolgsfaktor im Portfoliomanagement. Professionelle Kapitalverwalter müssen ihre Strategien entsprechend anpassen.',
       'Unsere Analyse zeigt, dass eine aktive Durationssteuerung in Kombination mit selektiven Credit-Investments die besten Ergebnisse liefert. Dabei ist eine kontinuierliche Überwachung der Zinsstrukturkurve und der Spread-Entwicklungen unerlässlich.',
@@ -29,7 +29,7 @@ export const blogData: Record<number, BlogPost> = {
       'Für die kommenden Monate erwarten wir eine weitere Normalisierung der Zinsen auf ein nachhaltiges Niveau. Institutionelle Investoren sollten diese Phase nutzen, um ihre Portfolios strategisch neu auszurichten und von den verbesserten Renditeniveaus zu profitieren.'
     ],
     category: 'Marktanalyse',
-    date: '15. Januar 2024',
+    date: '12. März 2026',
     readTime: '8 Min.',
     image: '/images/blog1detail.jpg',
     author: {
@@ -52,7 +52,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat frühzeitig mit der Umsetzung der neuen Anforderungen begonnen und verfügt über die notwendigen Systeme und Prozesse, um alle regulatorischen Vorgaben vollständig zu erfüllen.'
     ],
     category: 'Regulierung',
-    date: '12. Januar 2024',
+    date: '11. März 2026',
     readTime: '6 Min.',
     image: '/images/blog2detail.jpg',
     author: {
@@ -75,7 +75,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL verfolgt einen ganzheitlichen Diversifikationsansatz, der sowohl traditionelle als auch alternative Anlageklassen umfasst und kontinuierlich an die Marktbedingungen angepasst wird.'
     ],
     category: 'Strategie',
-    date: '10. Januar 2024',
+    date: '10. März 2026',
     readTime: '10 Min.',
     image: '/images/blog3detail.jpg',
     author: {
@@ -98,7 +98,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat ESG-Kriterien fest in alle Investmentprozesse integriert und verfügt über ein spezialisiertes ESG-Research-Team, das kontinuierlich die Nachhaltigkeitsperformance der Portfolios überwacht und optimiert.'
     ],
     category: 'Strategie',
-    date: '8. Januar 2024',
+    date: '09. März 2026',
     readTime: '7 Min.',
     image: '/images/blog4detail.jpg',
     author: {
@@ -121,7 +121,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL verfügt über ein spezialisiertes Geopolitik-Research-Team, das kontinuierlich globale Entwicklungen analysiert und deren potenzielle Auswirkungen auf die verwalteten Portfolios bewertet.'
     ],
     category: 'Marktanalyse',
-    date: '5. Januar 2024',
+    date: '08. März 2026',
     readTime: '9 Min.',
     image: '/images/blog5detail.jpg',
     author: {
@@ -144,7 +144,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL unterstützt institutionelle Kunden bei der Identifikation und Implementierung geeigneter Inflationsschutzstrategien unter Berücksichtigung individueller Anforderungen.'
     ],
     category: 'Strategie',
-    date: '3. Januar 2024',
+    date: '07. März 2026',
     readTime: '8 Min.',
     image: '/images/blog6.jpg',
     author: {
@@ -167,7 +167,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL verfügt über robuste Liquiditätsmanagement-Prozesse und -Systeme, die alle regulatorischen Anforderungen erfüllen und gleichzeitig eine optimale Portfoliosteuerung ermöglichen.'
     ],
     category: 'Regulierung',
-    date: '29. Dezember 2023',
+    date: '06. März 2026',
     readTime: '6 Min.',
     image: '/images/blog7.jpg',
     author: {
@@ -179,18 +179,18 @@ export const blogData: Record<number, BlogPost> = {
   },
   8: {
     id: 8,
-    title: 'Konjunkturausblick 2024: Deutschland und Europa',
+    title: 'Konjunkturausblick 2026: Deutschland und Europa',
     excerpt: 'Makroökonomische Prognosen für die deutsche und europäische Wirtschaft mit Fokus auf Zinsentwicklung und Wachstumsperspektiven.',
     content: [
-      'Das Jahr 2024 bringt für die deutsche und europäische Wirtschaft sowohl Herausforderungen als auch Chancen. Nach einem schwierigen Jahr 2023 zeichnen sich erste Stabilisierungstendenzen ab.',
+      'Das Jahr 2026 bringt für die deutsche und europäische Wirtschaft sowohl Herausforderungen als auch Chancen. Nach einem schwierigen Jahr 2025 zeichnen sich erste Stabilisierungstendenzen ab.',
       'Die Zinspolitik der EZB wird maßgeblich die wirtschaftliche Entwicklung beeinflussen. Eine Normalisierung des Zinsniveaus wird erwartet, wobei das Timing und das Ausmaß der Zinssenkungen von der Inflationsentwicklung abhängen.',
       'Die deutsche Industrie steht vor strukturellen Herausforderungen durch Energiekosten, digitale Transformation und geopolitische Unsicherheiten. Gleichzeitig bieten sich Chancen in Zukunftsbranchen wie erneuerbare Energien und Digitalisierung.',
       'Die Arbeitsmärkte zeigen sich trotz konjunktureller Schwäche robust. Der demografische Wandel führt zu anhaltenden Fachkräfteengpässen in vielen Branchen.',
       'Für institutionelle Investoren ergeben sich aus dieser Gemengelage vielfältige Implikationen. Eine selektive Sektorallokation und regionale Diversifikation gewinnen an Bedeutung.',
-      'SPINONE CAPITAL erwartet für 2024 eine moderate Wirtschaftserholung und positioniert die verwalteten Portfolios entsprechend für dieses Szenario.'
+      'SPINONE CAPITAL erwartet für 2026 eine moderate Wirtschaftserholung und positioniert die verwalteten Portfolios entsprechend für dieses Szenario.'
     ],
     category: 'Wirtschaft',
-    date: '27. Dezember 2023',
+    date: '05. März 2026',
     readTime: '11 Min.',
     image: '/images/blog8.jpg',
     author: {
@@ -213,7 +213,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL investiert kontinuierlich in die Digitalisierung ihrer Prozesse und Systeme, um Kunden modernste Services bei höchsten Sicherheitsstandards zu bieten.'
     ],
     category: 'Technologie',
-    date: '22. Dezember 2023',
+    date: '04. März 2026',
     readTime: '7 Min.',
     image: '/images/blog9.jpg',
     author: {
@@ -225,7 +225,7 @@ export const blogData: Record<number, BlogPost> = {
   },
   10: {
     id: 10,
-    title: 'Nachhaltige Investments: Trends und Entwicklungen 2024',
+    title: 'Nachhaltige Investments: Trends und Entwicklungen 2026',
     excerpt: 'Aktuelle Entwicklungen im Bereich nachhaltiger Geldanlagen und deren Integration in institutionelle Anlagestrategien.',
     content: [
       'Nachhaltige Investments haben sich von einem Nischenthema zum Mainstream entwickelt. Die Integration von ESG-Faktoren ist für institutionelle Investoren längst Standard.',
@@ -236,7 +236,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL bietet ein umfassendes Spektrum nachhaltiger Anlagestrategien und unterstützt institutionelle Kunden bei der Umsetzung ihrer Nachhaltigkeitsziele.'
     ],
     category: 'Nachhaltigkeit',
-    date: '20. Dezember 2023',
+    date: '03. März 2026',
     readTime: '9 Min.',
     image: '/images/blog10.jpg',
     author: {
@@ -259,7 +259,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL bietet institutionellen Investoren Zugang zu sorgfältig ausgewählten Private-Equity-Strategien und unterstützt bei der optimalen Portfoliointegration.'
     ],
     category: 'Marktanalyse',
-    date: '18. Dezember 2023',
+    date: '02. März 2026',
     readTime: '10 Min.',
     image: '/images/blog11.jpg',
     author: {
@@ -282,7 +282,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL verfügt über langjährige Erfahrung im Währungsrisikomanagement und bietet maßgeschneiderte Lösungen für institutionelle Kunden mit internationalen Portfolios.'
     ],
     category: 'Risikomanagement',
-    date: '15. Dezember 2023',
+    date: '01. März 2026',
     readTime: '8 Min.',
     image: '/images/blog12.jpg',
     author: {
@@ -305,7 +305,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL bietet Zugang zu diversifizierten Infrastrukturportfolios und unterstützt Kunden bei der Integration dieser Anlageklasse in ihre Gesamtallokation.'
     ],
     category: 'Strategie',
-    date: '13. Dezember 2023',
+    date: '28. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog13.jpg',
     author: {
@@ -328,7 +328,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat alle MiFID-II-Anforderungen vollständig implementiert und bietet Kunden höchste Transparenz und Anlegerschutz.'
     ],
     category: 'Regulierung',
-    date: '11. Dezember 2023',
+    date: '27. Februar 2026',
     readTime: '7 Min.',
     image: '/images/blog14.jpg',
     author: {
@@ -351,7 +351,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL setzt selektiv KI-Technologien ein, um die Qualität der Anlageentscheidungen zu verbessern und gleichzeitig die Kontrolle durch erfahrene Portfoliomanager zu gewährleisten.'
     ],
     category: 'Technologie',
-    date: '8. Dezember 2023',
+    date: '26. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog15.jpg',
     author: {
@@ -363,7 +363,7 @@ export const blogData: Record<number, BlogPost> = {
   },
   16: {
     id: 16,
-    title: 'Emerging Markets: Chancen und Risiken 2024',
+    title: 'Emerging Markets: Chancen und Risiken 2026',
     excerpt: 'Analyse der Schwellenländermärkte mit Fokus auf Wachstumspotenziale und spezifische Risikofaktoren für institutionelle Investoren.',
     content: [
       'Schwellenländer bieten langfristig attraktive Wachstumsperspektiven, die von demografischen Trends, steigendem Wohlstand und technologischem Leapfrogging getrieben werden.',
@@ -374,7 +374,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL verfolgt einen selektiven Ansatz bei Emerging-Markets-Investments und nutzt lokale Expertise zur Identifikation attraktiver Opportunitäten bei kontrollierbaren Risiken.'
     ],
     category: 'Marktanalyse',
-    date: '6. Dezember 2023',
+    date: '25. Februar 2026',
     readTime: '11 Min.',
     image: '/images/blog16.jpg',
     author: {
@@ -397,7 +397,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL führt regelmäßig umfassende Stresstests durch und nutzt die Ergebnisse zur kontinuierlichen Optimierung des Portfoliorisikomanagements.'
     ],
     category: 'Risikomanagement',
-    date: '4. Dezember 2023',
+    date: '24. Februar 2026',
     readTime: '8 Min.',
     image: '/images/blog17.jpg',
     author: {
@@ -420,7 +420,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL integriert Green Bonds systematisch in nachhaltige Fixed-Income-Strategien und überwacht die Einhaltung der Umweltziele durch kontinuierliches Impact-Reporting.'
     ],
     category: 'Nachhaltigkeit',
-    date: '1. Dezember 2023',
+    date: '23. Februar 2026',
     readTime: '7 Min.',
     image: '/images/blog18.jpg',
     author: {
@@ -443,7 +443,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL investiert kontinuierlich in Cybersicherheit und hat robuste Prozesse implementiert, um Kundendaten und Geschäftsprozesse effektiv zu schützen.'
     ],
     category: 'Technologie',
-    date: '29. November 2023',
+    date: '22. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog19.jpg',
     author: {
@@ -466,7 +466,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL berücksichtigt demografische Trends systematisch in der strategischen Asset Allocation und identifiziert Investmentchancen, die von diesen Entwicklungen profitieren.'
     ],
     category: 'Wirtschaft',
-    date: '27. November 2023',
+    date: '21. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog20.jpg',
     author: {
@@ -478,26 +478,26 @@ export const blogData: Record<number, BlogPost> = {
   },
   21: {
     id: 21,
-    title: 'Blockchain-Technologie im Wertpapierhandel',
-    excerpt: 'Potenziale und Herausforderungen der Distributed-Ledger-Technologie für den institutionellen Wertpapierhandel und Settlement.',
+    title: 'Festgeld vs. Tagesgeld: Die richtige Wahl für Ihre Anlagestrategie',
+    excerpt: 'Ein detaillierter Vergleich der beiden beliebtesten Sparprodukte und ihre optimale Einbindung in ein ausgewogenes Portfolio.',
     content: [
-      'Blockchain-Technologie verspricht, den Wertpapierhandel effizienter, schneller und sicherer zu machen. Das Potenzial für Kosteneinsparungen und Risikoreduktion ist erheblich.',
-      'Distributed-Ledger-Technologie kann Intermediäre reduzieren und Settlement-Zeiten von T+2 auf nahezu Echtzeit verkürzen.',
-      'Security Token Offerings (STOs) ermöglichen die tokenisierte Emission von Wertpapieren. Dies eröffnet neue Möglichkeiten für die Kapitalbeschaffung und den Sekundärhandel.',
-      'Regulatorische Klarheit ist entscheidend für die breite Adoption. Die EU-Regulierung für Märkte in Krypto-Assets (MiCA) schafft einen Rahmen für digitale Assets.',
-      'Interoperabilität zwischen verschiedenen Blockchain-Plattformen und die Integration mit bestehenden Systemen sind zentrale Herausforderungen.',
-      'SPINONE CAPITAL beobachtet die Entwicklung der Blockchain-Technologie aufmerksam und evaluiert kontinuierlich Möglichkeiten zur Effizienzsteigerung im Wertpapierhandel.'
+      'Die Wahl zwischen Festgeld und Tagesgeld gehört zu den grundlegenden Entscheidungen bei der Geldanlage. Beide Produkte bieten Sicherheit und planbare Erträge, unterscheiden sich jedoch wesentlich in Bezug auf Flexibilität, Rendite und Anlagehorizont.',
+      'Tagesgeld bietet maximale Flexibilität mit täglicher Verfügbarkeit des Kapitals. Die Zinssätze sind variabel und passen sich dem aktuellen Marktumfeld an. Für kurzfristige Liquiditätsreserven und Notfallfonds ist Tagesgeld die ideale Wahl.',
+      'Festgeld hingegen bindet das Kapital für einen festgelegten Zeitraum, belohnt diese Bindung jedoch mit höheren Zinssätzen. Je länger die Laufzeit, desto attraktiver die Rendite. Für Anleger mit einem klaren Anlagehorizont bietet Festgeld planbare und sichere Erträge.',
+      'Die optimale Strategie kombiniert beide Produkte: Tagesgeld für die kurzfristige Liquiditätsreserve und Festgeld für den mittelfristigen Vermögensaufbau. So profitieren Anleger von Flexibilität und attraktiven Zinsen gleichermaßen.',
+      'Bei der Wahl der Laufzeiten empfiehlt sich eine Staffelung: Mehrere Festgeldanlagen mit unterschiedlichen Laufzeiten sorgen für regelmäßige Fälligkeiten und ermöglichen eine flexible Anpassung an veränderte Marktbedingungen.',
+      'SPINONE CAPITAL berät Sie gerne bei der optimalen Aufteilung Ihres Kapitals zwischen Festgeld und Tagesgeld, abgestimmt auf Ihre individuellen Liquiditätsbedürfnisse und Renditeziele.'
     ],
-    category: 'Technologie',
-    date: '25. November 2023',
-    readTime: '9 Min.',
+    category: 'Anlageprodukte',
+    date: '20. Februar 2026',
+    readTime: '8 Min.',
     image: '/images/blog21.jpg',
     author: {
-      name: 'Dr. Michael Weber',
-      role: 'Chief Investment Officer',
-      avatar: '/images/author1.jpg'
+      name: 'Dr. Thomas Richter',
+      role: 'Senior Analyst',
+      avatar: '/images/author3.jpg'
     },
-    tags: ['Blockchain', 'Distributed Ledger', 'Wertpapierhandel', 'Tokenisierung']
+    tags: ['Festgeld', 'Tagesgeld', 'Sparprodukte', 'Zinsvergleich']
   },
   22: {
     id: 22,
@@ -512,7 +512,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL setzt selektiv Faktorstrategien ein und kombiniert quantitative Ansätze mit fundamentaler Analyse für eine robuste Portfoliokonstruktion.'
     ],
     category: 'Strategie',
-    date: '23. November 2023',
+    date: '19. Februar 2026',
     readTime: '11 Min.',
     image: '/images/blog22.jpg',
     author: {
@@ -524,7 +524,7 @@ export const blogData: Record<number, BlogPost> = {
   },
   23: {
     id: 23,
-    title: 'Immobilien-AIFs: Marktchancen 2024',
+    title: 'Immobilien-AIFs: Marktchancen 2026',
     excerpt: 'Analyse des deutschen Immobilienmarktes und Investitionsmöglichkeiten für geschlossene und offene Immobilienfonds.',
     content: [
       'Der deutsche Immobilienmarkt befindet sich in einer Phase der Neubewertung. Nach Jahren des Preisanstiegs führen höhere Zinsen zu Bewertungskorrekturen.',
@@ -535,7 +535,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL managt diversifizierte Immobilien-AIFs und identifiziert attraktive Investmentmöglichkeiten in verschiedenen Nutzungsarten und Standorten.'
     ],
     category: 'Marktanalyse',
-    date: '21. November 2023',
+    date: '18. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog23.jpg',
     author: {
@@ -558,7 +558,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat frühzeitig mit der DORA-Implementierung begonnen und verfügt über robuste ICT-Systeme und -Prozesse, die alle Anforderungen erfüllen.'
     ],
     category: 'Regulierung',
-    date: '19. November 2023',
+    date: '17. Februar 2026',
     readTime: '8 Min.',
     image: '/images/blog24.jpg',
     author: {
@@ -581,7 +581,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL bietet strategische Rohstoffallokationen im Rahmen diversifizierter Multi-Asset-Strategien und nutzt verschiedene Implementierungswege je nach Kundenanforderungen.'
     ],
     category: 'Strategie',
-    date: '17. November 2023',
+    date: '16. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog25.jpg',
     author: {
@@ -604,7 +604,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat die Anleihenportfolios auf das veränderte Umfeld ausgerichtet und setzt auf selektive Investments mit attraktivem Risiko-Rendite-Profil.'
     ],
     category: 'Marktanalyse',
-    date: '15. November 2023',
+    date: '15. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog26.jpg',
     author: {
@@ -627,7 +627,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL verfügt über ein eigenes ESG-Research-Team, das verschiedene Datenquellen trianguliert und fundierte Nachhaltigkeitsbewertungen erstellt.'
     ],
     category: 'Nachhaltigkeit',
-    date: '13. November 2023',
+    date: '14. Februar 2026',
     readTime: '8 Min.',
     image: '/images/blog27.jpg',
     author: {
@@ -650,7 +650,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL setzt Derivate gezielt und verantwortungsvoll ein, um Portfoliorisiken zu managen und die Rendite-Risiko-Struktur zu optimieren.'
     ],
     category: 'Risikomanagement',
-    date: '11. November 2023',
+    date: '13. Februar 2026',
     readTime: '11 Min.',
     image: '/images/blog28.jpg',
     author: {
@@ -673,7 +673,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL ermöglicht institutionellen Kunden Zugang zu sorgfältig ausgewählten VC-Strategien und unterstützt bei der optimalen Portfoliointegration.'
     ],
     category: 'Strategie',
-    date: '9. November 2023',
+    date: '12. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog29.jpg',
     author: {
@@ -696,7 +696,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL arbeitet eng mit Steuerexperten zusammen, um für institutionelle Kunden steuereffiziente Anlagestrukturen zu entwickeln.'
     ],
     category: 'Strategie',
-    date: '7. November 2023',
+    date: '11. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog30.jpg',
     author: {
@@ -719,7 +719,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL betreibt intensives Credit-Research und identifiziert attraktive Investmentmöglichkeiten in verschiedenen Marktsegmenten.'
     ],
     category: 'Marktanalyse',
-    date: '5. November 2023',
+    date: '10. Februar 2026',
     readTime: '8 Min.',
     image: '/images/blog31.jpg',
     author: {
@@ -742,7 +742,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL kombiniert automatisierte Prozesse mit menschlicher Expertise. Algorithmen unterstützen die Entscheidungsfindung, ersetzen aber nicht das Urteil erfahrener Portfoliomanager.'
     ],
     category: 'Technologie',
-    date: '3. November 2023',
+    date: '09. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog32.jpg',
     author: {
@@ -765,7 +765,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL unterstützt Pensionseinrichtungen mit maßgeschneiderten Anlagestrategien, die ihre spezifischen Verpflichtungen und regulatorischen Anforderungen berücksichtigen.'
     ],
     category: 'Wirtschaft',
-    date: '1. November 2023',
+    date: '08. Februar 2026',
     readTime: '11 Min.',
     image: '/images/blog33.jpg',
     author: {
@@ -788,7 +788,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat Klimarisiken systematisch in den Investmentprozess integriert und berichtet transparent über die Klimaausrichtung der verwalteten Portfolios.'
     ],
     category: 'Nachhaltigkeit',
-    date: '30. Oktober 2023',
+    date: '07. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog34.jpg',
     author: {
@@ -811,7 +811,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL integriert alternative Risikoprämien selektiv in Multi-Asset-Strategien und nutzt ihre diversifizierenden Eigenschaften zur Portfoliooptimierung.'
     ],
     category: 'Strategie',
-    date: '28. Oktober 2023',
+    date: '06. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog35.jpg',
     author: {
@@ -834,7 +834,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL hat eine robuste Compliance-Infrastruktur aufgebaut, die höchsten regulatorischen Standards entspricht und kontinuierlich weiterentwickelt wird.'
     ],
     category: 'Regulierung',
-    date: '26. Oktober 2023',
+    date: '05. Februar 2026',
     readTime: '8 Min.',
     image: '/images/blog36.jpg',
     author: {
@@ -857,7 +857,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL analysiert High-Yield-Märkte intensiv und identifiziert attraktive Investmentmöglichkeiten bei kontrollierbarem Risiko.'
     ],
     category: 'Marktanalyse',
-    date: '24. Oktober 2023',
+    date: '04. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog37.jpg',
     author: {
@@ -869,26 +869,26 @@ export const blogData: Record<number, BlogPost> = {
   },
   38: {
     id: 38,
-    title: 'Digitale Assets: Institutionelle Perspektive',
-    excerpt: 'Kryptowährungen und digitale Vermögenswerte: Regulierung, Verwahrung und Portfoliointegration für professionelle Investoren.',
+    title: 'Unternehmensanleihen: Chancen im aktuellen Zinsumfeld',
+    excerpt: 'Warum Unternehmensanleihen mit Investment-Grade-Rating im aktuellen Marktumfeld besonders attraktiv für konservative Anleger sind.',
     content: [
-      'Digitale Assets haben sich von einem Nischenphänomen zu einer ernstzunehmenden Anlageklasse entwickelt. Institutionelle Investoren evaluieren zunehmend ihre Rolle im Portfolio.',
-      'Die Regulierung digitaler Assets nimmt Form an. MiCA in der EU schafft einen Rahmen für Krypto-Assets und deren Dienstleister.',
-      'Sichere Verwahrungslösungen sind Voraussetzung für institutionelle Investments. Regulierte Krypto-Verwahrer bieten die notwendige Sicherheit und Compliance.',
-      'Die hohe Volatilität von Kryptowährungen erfordert eine sorgfältige Positionierung. Kleine Allokationen können das Portfolio-Risiko-Rendite-Profil beeinflussen.',
-      'Tokenisierte Assets jenseits von Kryptowährungen eröffnen neue Möglichkeiten. Security Tokens können traditionelle Vermögenswerte effizienter handelbar machen.',
-      'SPINONE CAPITAL beobachtet die Entwicklung digitaler Assets aufmerksam und evaluiert kontinuierlich Möglichkeiten und Risiken für institutionelle Investoren.'
+      'Das aktuelle Zinsumfeld bietet für Anleger in Unternehmensanleihen mit Investment-Grade-Rating besonders attraktive Einstiegsmöglichkeiten. Die Renditeaufschläge gegenüber Staatsanleihen haben sich auf einem Niveau stabilisiert, das eine angemessene Kompensation für das Kreditrisiko bietet.',
+      'Für konservative Anleger sind Investment-Grade-Unternehmensanleihen eine hervorragende Möglichkeit, das Portfolio zu diversifizieren und gleichzeitig stabile Erträge zu erzielen. Die Ausfallraten bei hochwertigen Emittenten bleiben historisch niedrig.',
+      'Besonders interessant sind derzeit Anleihen aus den Sektoren Versorgung, Telekommunikation und Gesundheit. Diese Branchen bieten stabile Cashflows und damit eine solide Grundlage für die Bedienung ihrer Anleihen.',
+      'Bei der Auswahl von Unternehmensanleihen ist eine sorgfältige Kreditanalyse unerlässlich. Unser Team prüft nicht nur die Bonität des Emittenten, sondern auch die spezifischen Anleihestrukturen und Covenants.',
+      'Eine Laufzeitenstaffelung bei Unternehmensanleihen reduziert das Zinsänderungsrisiko und sorgt für regelmäßige Reinvestitionsmöglichkeiten zu aktuellen Marktkonditionen.',
+      'SPINONE CAPITAL bietet professionelle Anleihenstrategien, die auf die individuellen Bedürfnisse unserer Kunden zugeschnitten sind und stabile Erträge mit kontrolliertem Risiko verbinden.'
     ],
-    category: 'Technologie',
-    date: '22. Oktober 2023',
-    readTime: '11 Min.',
+    category: 'Fixed Income',
+    date: '03. Februar 2026',
+    readTime: '9 Min.',
     image: '/images/blog38.jpg',
     author: {
-      name: 'Dr. Michael Weber',
-      role: 'Chief Investment Officer',
-      avatar: '/images/author1.jpg'
+      name: 'Julia Bergmann',
+      role: 'Fixed Income Analystin',
+      avatar: '/images/author4.jpg'
     },
-    tags: ['Digitale Assets', 'Kryptowährungen', 'MiCA', 'Blockchain']
+    tags: ['Anleihen', 'Investment Grade', 'Fixed Income', 'Unternehmensanleihen']
   },
   39: {
     id: 39,
@@ -903,7 +903,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL führt umfassende Performance-Attribution durch und berichtet transparent über die Quellen der Portfoliorendite.'
     ],
     category: 'Risikomanagement',
-    date: '20. Oktober 2023',
+    date: '02. Februar 2026',
     readTime: '9 Min.',
     image: '/images/blog39.jpg',
     author: {
@@ -926,7 +926,7 @@ export const blogData: Record<number, BlogPost> = {
       'SPINONE CAPITAL analysiert die Implikationen von Lieferkettenveränderungen für verschiedene Sektoren und Regionen und positioniert Portfolios entsprechend.'
     ],
     category: 'Wirtschaft',
-    date: '18. Oktober 2023',
+    date: '02. Februar 2026',
     readTime: '10 Min.',
     image: '/images/blog40.jpg',
     author: {

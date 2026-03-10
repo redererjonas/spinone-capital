@@ -46,42 +46,6 @@ const testimonials: Testimonial[] = [
     position: "Leiterin Finanzen, Deutsche Versorgungswerk eV",
     rating: 5,
   },
-  {
-    quote: "Die digitale Plattform ermoglicht uns Echtzeit-Einblicke in unsere Portfolios. Kombiniert mit personlicher Beratung ist dies die perfekte Balance zwischen Innovation und Tradition.",
-    author: "Robert Klein",
-    position: "CFO, MedTech Solutions GmbH",
-    rating: 5,
-  },
-  {
-    quote: "SPINONE CAPITAL hat uns durch volatile Marktphasen sicher navigiert. Das proaktive Risikomanagement und die schnelle Reaktionsfahigkeit des Teams sind aussergewohnlich.",
-    author: "Dr. Elisabeth Wagner",
-    position: "Geschaftsfuhrerin, Family Office Wagner",
-    rating: 5,
-  },
-  {
-    quote: "Als internationaler Investor schatze ich die grenzuberschreitende Expertise von SPINONE CAPITAL. Die Marktkenntnis und das Netzwerk in 8 Landern sind unschatzbar wertvoll.",
-    author: "Alexander Petrov",
-    position: "CEO, Global Investment Partners Ltd.",
-    rating: 5,
-  },
-  {
-    quote: "Die ESG-konformen Anlagestrategien von SPINONE CAPITAL entsprechen perfekt unseren Nachhaltigkeitszielen. Rendite und Verantwortung in Einklang - das ist modernes Vermogensmanagement.",
-    author: "Sophie Bergmann",
-    position: "Sustainability Officer, Green Future Foundation",
-    rating: 5,
-  },
-  {
-    quote: "Die Transparenz und Detailtiefe der Quartalsberichte sind beeindruckend. SPINONE CAPITAL setzt neue Standards in der Kommunikation mit institutionellen Anlegern.",
-    author: "Marcus Lehmann",
-    position: "Investment Manager, Pension Trust International",
-    rating: 5,
-  },
-  {
-    quote: "Nach intensiver Due Diligence haben wir uns fur SPINONE CAPITAL entschieden - die beste Entscheidung fur unser Stiftungsvermogen. Professionell, zuverlassig, erfolgreich.",
-    author: "Dr. Claudia Zimmermann",
-    position: "Vorstand, Kulturstiftung Deutschland",
-    rating: 5,
-  },
 ];
 
 const accentColors = ['#6366F1', '#06B6D4', '#A855F7', '#EC4899'];

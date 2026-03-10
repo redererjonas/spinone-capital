@@ -16,13 +16,6 @@ interface MarketItem {
   sparkline: number[];
 }
 
-interface CryptoData {
-  [key: string]: {
-    eur: number;
-    eur_24h_change: number;
-  };
-}
-
 interface ForexRates {
   rates: {
     [key: string]: number;
@@ -99,25 +92,6 @@ const indicesData: MarketItem[] = [
   { id: 'cac', name: 'CAC 40', symbol: 'FR40', value: 7543.28, change: 0.43, icon: 'FR', color: 'from-[#6366F1] to-red-500', sparkline: generateSparkline(7543) },
 ];
 
-// Crypto icons mapping
-const cryptoIcons: { [key: string]: string } = {
-  bitcoin: 'B',
-  ethereum: 'E',
-  solana: 'S',
-  cardano: 'A',
-  ripple: 'X',
-  dogecoin: 'D',
-};
-
-const cryptoColors: { [key: string]: string } = {
-  bitcoin: 'from-orange-400 to-orange-600',
-  ethereum: 'from-[#A855F7] to-[#6366F1]',
-  solana: 'from-[#A855F7] to-[#06B6D4]',
-  cardano: 'from-[#6366F1] to-[#06B6D4]',
-  ripple: 'from-gray-500 to-[#6366F1]',
-  dogecoin: 'from-yellow-400 to-yellow-600',
-};
-
 // Currency info
 const currencyInfo: { [key: string]: { name: string; icon: string; color: string } } = {
   USD: { name: 'US Dollar', icon: '$', color: 'from-[#06B6D4] to-[#6366F1]' },
@@ -132,44 +106,9 @@ const LiveMarketTicker = () => {
   const [activeTab, setActiveTab] = useState('indizes');
   const [stocks, setStocks] = useState<MarketItem[]>(stocksData);
   const [indices, setIndices] = useState<MarketItem[]>(indicesData);
-  const [cryptos, setCryptos] = useState<MarketItem[]>([]);
   const [currencies, setCurrencies] = useState<MarketItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [lastUpdate, setLastUpdate] = useState<Date>(new Date());
-
-  // Fetch crypto data from CoinGecko
-  const fetchCryptoData = useCallback(async () => {
-    try {
-      const response = await fetch(
-        'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,cardano,ripple,dogecoin&vs_currencies=eur&include_24hr_change=true'
-      );
-      const data: CryptoData = await response.json();
-
-      const cryptoItems: MarketItem[] = Object.entries(data).map(([id, values]) => ({
-        id,
-        name: id.charAt(0).toUpperCase() + id.slice(1),
-        symbol: id.toUpperCase().slice(0, 3),
-        value: values.eur,
-        change: values.eur_24h_change || 0,
-        icon: cryptoIcons[id] || 'C',
-        color: cryptoColors[id] || 'from-gray-500 to-gray-700',
-        sparkline: generateSparkline(values.eur, 0.03),
-      }));
-
-      setCryptos(cryptoItems);
-    } catch (error) {
-      console.error('Error fetching crypto data:', error);
-      // Fallback data
-      setCryptos([
-        { id: 'bitcoin', name: 'Bitcoin', symbol: 'BTC', value: 42850.00, change: 2.34, icon: 'B', color: 'from-orange-400 to-orange-600', sparkline: generateSparkline(42850, 0.03) },
-        { id: 'ethereum', name: 'Ethereum', symbol: 'ETH', value: 2285.50, change: 1.87, icon: 'E', color: 'from-[#A855F7] to-[#6366F1]', sparkline: generateSparkline(2285, 0.03) },
-        { id: 'solana', name: 'Solana', symbol: 'SOL', value: 98.45, change: 5.23, icon: 'S', color: 'from-[#A855F7] to-[#06B6D4]', sparkline: generateSparkline(98, 0.04) },
-        { id: 'cardano', name: 'Cardano', symbol: 'ADA', value: 0.62, change: -1.45, icon: 'A', color: 'from-[#6366F1] to-[#06B6D4]', sparkline: generateSparkline(0.62, 0.03) },
-        { id: 'ripple', name: 'XRP', symbol: 'XRP', value: 0.58, change: 0.89, icon: 'X', color: 'from-gray-500 to-[#6366F1]', sparkline: generateSparkline(0.58, 0.02) },
-        { id: 'dogecoin', name: 'Dogecoin', symbol: 'DOGE', value: 0.089, change: 3.21, icon: 'D', color: 'from-yellow-400 to-yellow-600', sparkline: generateSparkline(0.089, 0.04) },
-      ]);
-    }
-  }, []);
 
   // Fetch forex data from Frankfurter
   const fetchForexData = useCallback(async () => {
@@ -209,13 +148,13 @@ const LiveMarketTicker = () => {
   useEffect(() => {
     const fetchAllData = async () => {
       setIsLoading(true);
-      await Promise.all([fetchCryptoData(), fetchForexData()]);
+      await fetchForexData();
       setIsLoading(false);
       setLastUpdate(new Date());
     };
 
     fetchAllData();
-  }, [fetchCryptoData, fetchForexData]);
+  }, [fetchForexData]);
 
   // Real-time simulation updates
   useEffect(() => {
@@ -240,16 +179,6 @@ const LiveMarketTicker = () => {
         };
       }));
 
-      setCryptos(prev => prev.map(crypto => {
-        const newSparkline = [...crypto.sparkline.slice(1), crypto.value * (1 + (Math.random() - 0.5) * 0.02)];
-        return {
-          ...crypto,
-          value: crypto.value * (1 + (Math.random() - 0.5) * 0.01),
-          change: crypto.change + (Math.random() - 0.5) * 0.2,
-          sparkline: newSparkline,
-        };
-      }));
-
       setCurrencies(prev => prev.map(currency => {
         const newSparkline = [...currency.sparkline.slice(1), currency.value * (1 + (Math.random() - 0.5) * 0.005)];
         return {
@@ -270,7 +199,6 @@ const LiveMarketTicker = () => {
     { id: 'indizes', label: 'Indizes', icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z', count: indices.length },
     { id: 'aktien', label: 'Aktien', icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6', count: stocks.length },
     { id: 'waehrungen', label: 'Wahrungen', icon: 'M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4', count: currencies.length },
-    { id: 'coins', label: 'Krypto', icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z', count: cryptos.length },
   ];
 
   const getActiveData = (): MarketItem[] => {
@@ -278,15 +206,12 @@ const LiveMarketTicker = () => {
       case 'aktien': return stocks;
       case 'indizes': return indices;
       case 'waehrungen': return currencies;
-      case 'coins': return cryptos;
       default: return indices;
     }
   };
 
   const formatValue = (value: number, category: string): string => {
-    if (category === 'coins' && value < 1) {
-      return value.toFixed(4);
-    } else if (category === 'waehrungen') {
+    if (category === 'waehrungen') {
       return value.toFixed(4);
     } else if (value >= 1000) {
       return value.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -518,7 +443,7 @@ const LiveMarketTicker = () => {
           {[
             { label: 'Gehandelte Markte', value: '50+', icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z', color: '#6366F1' },
             { label: 'Echtzeit-Updates', value: '< 3s', icon: 'M13 10V3L4 14h7v7l9-11h-7z', color: '#06B6D4' },
-            { label: 'Verfugbare Kryptos', value: '100+', icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z', color: '#A855F7' },
+            { label: 'Anlageprodukte', value: '5', icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z', color: '#A855F7' },
             { label: 'Wahrungspaare', value: '30+', icon: 'M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4', color: '#EC4899' },
           ].map((stat, index) => (
             <motion.div

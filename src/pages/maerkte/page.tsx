@@ -31,20 +31,20 @@ const MaerktePage = () => {
     { name: 'USD/CHF', symbol: 'USD/CHF', price: '0.8712', change: -0.0018, changePercent: -0.21 },
   ];
 
-  const crypto: MarketData[] = [
-    { name: 'Bitcoin', symbol: 'BTC', price: '67.234,56', change: 1234.56, changePercent: 1.87 },
-    { name: 'Ethereum', symbol: 'ETH', price: '3.456,78', change: -89.23, changePercent: -2.52 },
-    { name: 'Solana', symbol: 'SOL', price: '156,34', change: 12.45, changePercent: 8.65 },
-    { name: 'Cardano', symbol: 'ADA', price: '0.5678', change: 0.0234, changePercent: 4.30 },
-    { name: 'Polkadot', symbol: 'DOT', price: '7.89', change: -0.34, changePercent: -4.13 },
-    { name: 'Ripple', symbol: 'XRP', price: '0.5234', change: 0.0156, changePercent: 3.07 },
+  const bonds: MarketData[] = [
+    { name: 'Bund 10Y', symbol: 'DE10Y', price: '2,456', change: 0.023, changePercent: 0.95 },
+    { name: 'Bund 2Y', symbol: 'DE2Y', price: '2,834', change: -0.012, changePercent: -0.42 },
+    { name: 'Euro Corp IG', symbol: 'ERIG', price: '3,125', change: 0.034, changePercent: 1.10 },
+    { name: 'US Treasury 10Y', symbol: 'US10Y', price: '4,234', change: 0.045, changePercent: 1.07 },
+    { name: 'Euro High Yield', symbol: 'ERHY', price: '5,678', change: -0.089, changePercent: -1.54 },
+    { name: 'Euro Inflation', symbol: 'ERIL', price: '2,123', change: 0.015, changePercent: 0.71 },
   ];
 
   const getMarketData = () => {
     switch (activeTab) {
       case 'indices': return indices;
       case 'currencies': return currencies;
-      case 'crypto': return crypto;
+      case 'bonds': return bonds;
       default: return indices;
     }
   };
@@ -127,7 +127,7 @@ const MaerktePage = () => {
               {[
                 { id: 'indices', label: 'Indizes', icon: 'ri-bar-chart-grouped-line' },
                 { id: 'currencies', label: 'Wahrungen', icon: 'ri-exchange-dollar-line' },
-                { id: 'crypto', label: 'Krypto', icon: 'ri-bit-coin-line' },
+                { id: 'bonds', label: 'Anleihen', icon: 'ri-stock-line' },
               ].map((tab) => (
                 <button
                   key={tab.id}

@@ -1,10 +1,7 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import LiveMarketTicker from './components/LiveMarketTicker';
-import StatsSection from './components/StatsSection';
 import ServicesOverview from './components/ServicesOverview';
-import WhyChooseUs from './components/WhyChooseUs';
 import ProcessSection from './components/ProcessSection';
 import TrustHighlights from './components/TrustHighlights';
 import Testimonials from '../../components/feature/Testimonials';
@@ -14,12 +11,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#020617]">
       <main>
         <HeroSection />
-        <LiveMarketTicker />
-        <StatsSection />
-        <TrustHighlights />
         <ServicesOverview />
-        <WhyChooseUs />
         <ProcessSection />
+        <TrustHighlights />
         <Testimonials />
       </main>
     </div>
