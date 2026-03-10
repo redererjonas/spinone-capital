@@ -1,0 +1,19 @@
+<svg width="320" height="50" viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logoGradFull" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6366F1"/>
+            <stop offset="1" stop-color="#A855F7"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Icon Section -->
+    <rect width="48" height="48" rx="12" fill="url(#logoGradFull)"/>
+    <text x="24" y="33" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">SC</text>
+
+    <!-- Text Section -->
+    <!-- SPINONE CAPITAL - White -->
+    <text x="60" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="white" letter-spacing="-0.5">SPINONE CAPITAL</text>
+
+    <!-- Vermögensmanagement - Purple -->
+    <text x="60" y="40" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#A855F7" letter-spacing="1">VERMÖGENSMANAGEMENT</text>
+</svg>

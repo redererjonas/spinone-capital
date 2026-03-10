@@ -1,0 +1,10 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logoGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6366F1"/>
+            <stop offset="1" stop-color="#A855F7"/>
+        </linearGradient>
+    </defs>
+    <rect width="48" height="48" rx="12" fill="url(#logoGrad)"/>
+    <text x="24" y="33" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">SC</text>
+</svg>
