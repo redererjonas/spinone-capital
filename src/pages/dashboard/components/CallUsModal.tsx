@@ -52,7 +52,7 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
                 <div className="mt-4 flex items-center justify-center gap-4 text-sm text-slate-600">
                   <div className="flex items-center gap-1">
                     <i className="ri-time-line text-blue-500"></i>
-                    <span>Mo-Fr: 9:00 - 18:00</span>
+                    <span>Mo-Fr: 10:00 - 16:00</span>
                   </div>
                 </div>
               </div>

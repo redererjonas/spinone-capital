@@ -53,7 +53,7 @@ const KontaktPage = () => {
       icon: 'ri-phone-line',
       title: 'Telefon',
       content: '+49 (0)89 588088170',
-      description: 'Mo-Fr: 9:00 - 18:00 Uhr',
+      description: 'Mo-Fr: 10:00 - 16:00 Uhr',
       gradient: 'from-primary-500 to-primary-700'
     },
     {
@@ -73,7 +73,7 @@ const KontaktPage = () => {
     {
       icon: 'ri-time-line',
       title: 'Öffnungszeiten',
-      content: 'Mo-Fr: 9:00 - 18:00',
+      content: 'Mo-Fr: 10:00 - 16:00',
       description: 'Sa-So: Geschlossen',
       gradient: 'from-primary-600 to-accent-cyan'
     }
@@ -132,7 +132,7 @@ const KontaktPage = () => {
               {[
                 { icon: 'ri-time-line', label: 'Antwortzeit', value: 'Innerhalb 24h' },
                 { icon: 'ri-shield-check-line', label: 'Datenschutz', value: 'DSGVO-konform' },
-                { icon: 'ri-customer-service-line', label: 'Verfügbarkeit', value: 'Mo-Fr 9-18 Uhr' },
+                { icon: 'ri-customer-service-line', label: 'Verfügbarkeit', value: 'Mo-Fr 10-16 Uhr' },
               ].map((item, index) => (
                 <div
                   key={index}
@@ -400,7 +400,7 @@ const KontaktPage = () => {
                     {[
                       { icon: 'ri-phone-line', label: 'Rufen Sie uns an', value: '+49 (0)89 588088170' },
                       { icon: 'ri-mail-line', label: 'Schreiben Sie uns', value: 'info@spinone-asset.com' },
-                      { icon: 'ri-time-line', label: 'Öffnungszeiten', value: 'Mo-Fr: 9:00 - 18:00 Uhr', sub: 'Sa-So: Geschlossen' },
+                      { icon: 'ri-time-line', label: 'Öffnungszeiten', value: 'Mo-Fr: 10:00 - 16:00 Uhr', sub: 'Sa-So: Geschlossen' },
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-4 p-4 bg-white shadow-sm rounded-xl border border-slate-200">
                         <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl flex items-center justify-center flex-shrink-0">
