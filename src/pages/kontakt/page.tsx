@@ -34,7 +34,7 @@ const KontaktPage = () => {
         betreff: '',
         nachricht: ''
       });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -352,7 +352,7 @@ const KontaktPage = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold py-4 px-8 rounded-xl hover:shadow-xl hover:shadow-primary-500/25 transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap cursor-pointer"
+                      className="w-full bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold py-4 px-8 rounded-xl hover:shadow-xl hover:shadow-primary-500/25 transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                     >
                       {isSubmitting ? (
                         <>

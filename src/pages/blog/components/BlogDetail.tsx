@@ -145,16 +145,16 @@ const BlogDetail = () => {
           className="flex items-center space-x-4 mt-8"
         >
           <span className="text-slate-500 font-semibold">Teilen:</span>
-          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer">
+          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
             <i className="ri-linkedin-fill text-lg"></i>
           </button>
-          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer">
+          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
             <i className="ri-twitter-x-fill text-lg"></i>
           </button>
-          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer">
+          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
             <i className="ri-facebook-fill text-lg"></i>
           </button>
-          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer">
+          <button className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-50 border border-slate-200 hover:bg-primary-600 hover:border-primary-600 text-slate-600 hover:text-white transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
             <i className="ri-mail-line text-lg"></i>
           </button>
         </motion.div>
@@ -163,7 +163,7 @@ const BlogDetail = () => {
         <div className="flex items-center justify-between mt-16 pt-8 border-t border-slate-200">
           <button
             onClick={() => navigate('/blog')}
-            className="flex items-center space-x-2 text-slate-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer"
+            className="flex items-center space-x-2 text-slate-600 hover:text-primary-600 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-lg"
           >
             <i className="ri-arrow-left-line"></i>
             <span className="font-semibold">Zurück zur Übersicht</span>

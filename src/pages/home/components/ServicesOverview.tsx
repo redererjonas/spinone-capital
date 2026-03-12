@@ -82,12 +82,12 @@ export default function ServicesOverview() {
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.03, 0.06, 0.03] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/4 -left-1/4 w-[800px] h-[800px] bg-primary-400 rounded-full blur-[250px]"
+          className="hidden md:block absolute top-1/4 -left-1/4 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-primary-400 rounded-full blur-[250px]"
         />
         <motion.div
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.04, 0.07, 0.04] }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-          className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-primary-300 rounded-full blur-[250px]"
+          className="hidden md:block absolute bottom-1/4 -right-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-primary-300 rounded-full blur-[250px]"
         />
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:80px_80px]" />

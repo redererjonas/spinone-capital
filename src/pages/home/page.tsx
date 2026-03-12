@@ -1,5 +1,3 @@
-'use client';
-
 import HeroSection from './components/HeroSection';
 import ServicesOverview from './components/ServicesOverview';
 import ProcessSection from './components/ProcessSection';

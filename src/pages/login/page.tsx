@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth } from '@/contexts/useAuth';
 import { motion } from 'framer-motion';
 
 export default function LoginPage() {
@@ -35,7 +35,7 @@ export default function LoginPage() {
         >
           <button
             onClick={() => navigate('/')}
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-600 transition-colors mb-6 cursor-pointer"
+            className="inline-flex items-center gap-2 text-slate-500 hover:text-primary-600 transition-colors mb-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-lg"
           >
             <i className="ri-arrow-left-line text-xl"></i>
             <span className="text-sm font-medium">Zurück zur Startseite</span>
@@ -103,7 +103,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md"
                 >
                   <i className={`${showPassword ? 'ri-eye-off-line' : 'ri-eye-line'} text-xl`}></i>
                 </button>
@@ -125,7 +125,7 @@ export default function LoginPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-primary-600 to-primary-500 text-white py-4 rounded-xl font-semibold hover:shadow-xl hover:shadow-primary-500/25 hover:-translate-y-0.5 transition-all cursor-pointer whitespace-nowrap"
+              className="w-full bg-gradient-to-r from-primary-600 to-primary-500 text-white py-4 rounded-xl font-semibold hover:shadow-xl hover:shadow-primary-500/25 hover:-translate-y-0.5 transition-all cursor-pointer whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             >
               Anmelden
             </button>
@@ -167,7 +167,7 @@ export default function LoginPage() {
             Noch kein Konto?{' '}
             <button
               onClick={() => navigate('/kontakt')}
-              className="text-primary-600 font-semibold hover:text-primary-700 transition-colors cursor-pointer"
+              className="text-primary-600 font-semibold hover:text-primary-700 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-md"
             >
               Jetzt Beratung anfragen
             </button>

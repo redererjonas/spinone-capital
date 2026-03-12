@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 
 export default function ProcessSection() {
@@ -42,8 +40,8 @@ export default function ProcessSection() {
     <section className="relative py-24 bg-slate-50 bg-filigree overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] bg-primary-200/5 rounded-full blur-[250px]" />
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-primary-300/5 rounded-full blur-[250px]" />
+        <div className="hidden md:block absolute top-1/3 left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-primary-200/5 rounded-full blur-[250px]" />
+        <div className="hidden md:block absolute bottom-1/3 right-1/4 w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-primary-300/5 rounded-full blur-[250px]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:80px_80px]" />
       </div>
 

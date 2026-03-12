@@ -1,5 +1,3 @@
-'use client';
-
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -9,9 +7,9 @@ export default function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-white"></div>
-        <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-primary-200/10 rounded-full blur-[150px]" />
-        <div className="absolute bottom-20 right-10 w-[600px] h-[600px] bg-accent-cyan/5 rounded-full blur-[180px]" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-300/5 rounded-full blur-[200px]" />
+        <div className="hidden md:block absolute top-20 left-10 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-primary-200/10 rounded-full blur-[150px]" />
+        <div className="hidden md:block absolute bottom-20 right-10 w-[350px] h-[350px] md:w-[600px] md:h-[600px] bg-accent-cyan/5 rounded-full blur-[180px]" />
+        <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] md:w-[600px] md:h-[600px] bg-primary-300/5 rounded-full blur-[200px]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.04)_1px,transparent_1px)] bg-[size:60px_60px]" />
       </div>
 
@@ -74,7 +72,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16"
           >
-            <Link to="/kontakt" className="group relative">
+            <Link to="/kontakt" className="group relative focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500 rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none"></div>
               <div className="relative px-10 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white text-base font-bold rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-300 whitespace-nowrap flex items-center space-x-3">
                 <span>Jetzt informieren</span>
@@ -84,7 +82,7 @@ export default function HeroSection() {
               </div>
             </Link>
 
-            <Link to="/leistungen/festgeld" className="group px-10 py-4 bg-white border border-slate-300 text-slate-800 text-base font-bold rounded-2xl hover:bg-slate-50 hover:border-primary-300 hover:shadow-lg transition-all duration-300 whitespace-nowrap flex items-center space-x-3">
+            <Link to="/leistungen/festgeld" className="group px-10 py-4 bg-white border border-slate-300 text-slate-800 text-base font-bold rounded-2xl hover:bg-slate-50 hover:border-primary-300 hover:shadow-lg transition-all duration-300 whitespace-nowrap flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
               <span>Anlageprodukte entdecken</span>
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

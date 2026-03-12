@@ -131,8 +131,8 @@ const LiveMarketTicker = () => {
 
       setCurrencies(forexItems);
     } catch (error) {
-      console.error('Error fetching forex data:', error);
-      // Fallback data
+      // API hatasi durumunda sessizce fallback veriye gec
+      void error;
       setCurrencies([
         { id: 'usd', name: 'US Dollar', symbol: 'EUR/USD', value: 1.0892, change: 0.15, icon: '$', color: 'from-accent-cyan to-primary-600', sparkline: generateSparkline(1.089, 0.01) },
         { id: 'gbp', name: 'British Pound', symbol: 'EUR/GBP', value: 0.8567, change: -0.08, icon: 'P', color: 'from-primary-500 to-primary-600', sparkline: generateSparkline(0.856, 0.01) },

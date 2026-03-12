@@ -90,12 +90,12 @@ export default function WhyChooseUs() {
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.03, 0.06, 0.03] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-1/4 right-0 w-[700px] h-[700px] bg-primary-300 rounded-full blur-[250px]"
+          className="hidden md:block absolute -top-1/4 right-0 w-[350px] h-[350px] md:w-[700px] md:h-[700px] bg-primary-300 rounded-full blur-[250px]"
         />
         <motion.div
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.04, 0.07, 0.04] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent-cyan rounded-full blur-[250px] opacity-5"
+          className="hidden md:block absolute bottom-0 left-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-accent-cyan rounded-full blur-[250px] opacity-5"
         />
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:80px_80px]" />

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -15,11 +15,7 @@ export default function TagesgeldPage() {
 
   const [dailyBalance, setDailyBalance] = useState<number[]>([]);
 
-  useEffect(() => {
-    calculateDailyBalance();
-  }, [calculatorData]);
-
-  const calculateDailyBalance = () => {
+  const calculateDailyBalance = useCallback(() => {
     const balances: number[] = [];
     let currentBalance = calculatorData.amount;
     const dailyRate = calculatorData.interestRate / 100 / 365;
@@ -34,7 +30,11 @@ export default function TagesgeldPage() {
     }
 
     setDailyBalance(balances);
-  };
+  }, [calculatorData]);
+
+  useEffect(() => {
+    calculateDailyBalance();
+  }, [calculateDailyBalance]);
 
   const finalBalance = dailyBalance[dailyBalance.length - 1] || calculatorData.amount;
   const totalProfit = finalBalance - calculatorData.amount -

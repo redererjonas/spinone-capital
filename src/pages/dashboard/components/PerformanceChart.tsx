@@ -117,7 +117,7 @@ export default function PerformanceChart({ investments }: PerformanceChartProps)
 
   const monthlyData = getFilteredData();
 
-  const CustomTooltip = ({ active, payload, label }: any) => {
+  const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?: Array<{ value: number; payload: { profit: number } }>; label?: string }) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-2xl">

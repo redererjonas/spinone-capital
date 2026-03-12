@@ -102,7 +102,7 @@ export default function Header() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className={`${navLinkClass('/leistungen', false)} flex items-center space-x-1`}
+                className={`${navLinkClass('/leistungen', false)} flex items-center space-x-1 focus:outline-none focus:ring-2 focus:ring-primary-500`}
               >
                 <span>Leistungen</span>
                 <motion.i
@@ -167,13 +167,13 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-2.5">
             <Link
               to="/login"
-              className="px-4 py-2 text-[13px] font-semibold text-slate-500 hover:text-primary-600 rounded-xl transition-all duration-300 hover:bg-primary-50/60"
+              className="px-4 py-2 text-[13px] font-semibold text-slate-500 hover:text-primary-600 rounded-xl transition-all duration-300 hover:bg-primary-50/60 focus:outline-none focus:ring-2 focus:ring-primary-500"
             >
               Anmelden
             </Link>
             <Link
               to="/kontakt"
-              className="group relative px-5 py-2.5 text-[13px] font-bold rounded-xl overflow-hidden"
+              className="group relative px-5 py-2.5 text-[13px] font-bold rounded-xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500 transition-all duration-300"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -188,7 +188,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl bg-white/60 hover:bg-white border border-slate-200/60 transition-all duration-300"
+            className="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl bg-white/60 hover:bg-white border border-slate-200/60 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
           >
             <motion.i
               animate={{ rotate: isMobileMenuOpen ? 90 : 0 }}
@@ -220,8 +220,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.98 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
-            className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-2xl border border-slate-200/60 shadow-[0_20px_60px_-12px_rgba(37,99,235,0.15)] rounded-2xl z-50"
-            style={{ maxHeight: 'calc(100vh - 6rem)', overflowY: 'auto' }}
+            className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-2xl border border-slate-200/60 shadow-[0_20px_60px_-12px_rgba(37,99,235,0.15)] rounded-2xl z-50 max-h-[calc(100vh-6rem)] overflow-y-auto"
           >
             <div className="p-4 space-y-1">
               {[
@@ -275,14 +274,14 @@ export default function Header() {
               <div className="pt-3 space-y-2 border-t border-slate-100 mt-2">
                 <Link
                   to="/login"
-                  className="flex items-center justify-center space-x-2 w-full px-6 py-3 text-sm font-semibold text-slate-600 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all duration-200"
+                  className="flex items-center justify-center space-x-2 w-full px-6 py-3 text-sm font-semibold text-slate-600 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500"
                 >
                   <i className="ri-login-box-line"></i>
                   <span>Anmelden</span>
                 </Link>
                 <Link
                   to="/kontakt"
-                  className="relative flex items-center justify-center space-x-2 w-full px-6 py-3 text-sm font-bold rounded-xl overflow-hidden group"
+                  className="relative flex items-center justify-center space-x-2 w-full px-6 py-3 text-sm font-bold rounded-xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500"></div>
                   <i className="ri-rocket-line relative text-white"></i>

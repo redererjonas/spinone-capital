@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth } from '@/contexts/useAuth';
 import { motion } from 'framer-motion';
 import DashboardHeader from '../components/DashboardHeader';
 import CallUsModal from '../components/CallUsModal';

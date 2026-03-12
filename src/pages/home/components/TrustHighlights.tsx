@@ -87,12 +87,12 @@ export default function TrustHighlights() {
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.03, 0.06, 0.03] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary-300 rounded-full blur-[200px]"
+          className="hidden md:block absolute top-0 left-1/4 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-primary-300 rounded-full blur-[200px]"
         />
         <motion.div
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.04, 0.07, 0.04] }}
           transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-primary-200 rounded-full blur-[200px]"
+          className="hidden md:block absolute bottom-0 right-1/4 w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-primary-200 rounded-full blur-[200px]"
         />
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.04)_1px,transparent_1px)] bg-[size:60px_60px]" />
@@ -223,7 +223,7 @@ export default function TrustHighlights() {
                 <p className="text-xl font-bold text-slate-900">Wir beraten Sie gerne</p>
               </div>
             </div>
-            <Link to="/kontakt" className="group relative">
+            <Link to="/kontakt" className="group relative focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-xl">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500 rounded-xl blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
               <div className="relative px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-500 text-white text-base font-bold rounded-xl shadow-xl transform group-hover:scale-105 transition-all duration-300 whitespace-nowrap flex items-center space-x-2">
                 <span>Kontakt aufnehmen</span>
