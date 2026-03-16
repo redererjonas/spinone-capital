@@ -68,7 +68,7 @@ export default function AboutHero() {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
           >
             {[
-              { icon: 'ri-map-pin-line', label: 'Standort', value: 'Wien', gradient: 'from-[#2563EB] to-[#3B82F6]' },
+              { icon: 'ri-map-pin-line', label: 'Standort', value: 'München', gradient: 'from-[#2563EB] to-[#3B82F6]' },
               { icon: 'ri-shield-check-line', label: 'Regulierung', value: 'KAGB §44', gradient: 'from-[#0EA5E9] to-[#2563EB]' },
               { icon: 'ri-funds-line', label: 'Fokus', value: 'Spezial-AIF', gradient: 'from-[#3B82F6] to-[#0EA5E9]' }
             ].map((item, index) => (
