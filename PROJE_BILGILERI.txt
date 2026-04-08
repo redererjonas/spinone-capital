@@ -1,0 +1,203 @@
+================================================================================
+  FINANZINVEST VERMOGENSMANAGEMENT (MODERN)
+  Spinone Capital GmbH - Yatirim Platformu
+  Proje Bilgi Dokumani
+  Olusturulma Tarihi: 16 Mart 2026
+================================================================================
+
+1. PROJE HAKKINDA
+================================================================================
+Finanzinvest, Almanya Munih merkezli Spinone Capital GmbH icin gelistirilmis
+profesyonel bir varlik yonetimi web platformudur. Kurumsal ve nitelikli
+yatirimcilara hizmet veren, duzenlemeye tabi yatirim urunleri sunar:
+
+- Festgeld (Vadeli mevduat)
+- Flexgeld (Esnek mevduat)
+- Tagesgeld (Gunluk mevduat)
+- Aktien (Hisse senetleri)
+- Anleihen (Tahviller)
+
+Proje Turu: Frontend SPA (Single Page Application)
+Deploy: Netlify uzerinde barindiriliyor
+Veritabani: YOK (localStorage ve mock veri)
+Backend: YOK
+
+NOT: Bu proje "fidelia-main" projesinin guncellenmis/yeniden markalastirilmis
+versiyonudur.
+
+2. TEKNOLOJI YIGINI
+================================================================================
+- React 19.1.0
+- TypeScript 5.8.3 (strict mode aktif)
+- Vite 7.0.3 (build araci)
+- Tailwind CSS 3.4.17
+- Framer Motion 12.23.12 (animasyonlar)
+- Recharts 3.2.0 (grafikler)
+- React Router DOM 7.6.3 (yonlendirme)
+- i18next 25.4.1 (coklu dil: Almanca/Ingilizce)
+- react-countup 6.5.3 (animasyonlu sayaclar)
+- Firebase 12.0.0 (yapilandirilmis, opsiyonel)
+- Supabase 2.57.4 (yapilandirilmis, opsiyonel)
+- Stripe 4.0.2 (yapilandirilmis, opsiyonel)
+- Puppeteer 24.36.1 (ekran goruntusu otomasyonu)
+
+3. GEREKSINIMLER
+================================================================================
+- Node.js 18+ (npm ile birlikte)
+- Baska hicbir sey gerekmez
+
+4. KURULUM VE CALISTIRMA
+================================================================================
+
+Adim 1: Proje dizinine gidin
+   cd finanzinvest-modern/
+
+Adim 2: Bagimliliklari yukleyin
+   npm install
+
+Adim 3: Gelistirme sunucusunu baslatin
+   npm run dev
+   # http://localhost:3000 adresinde calisir
+
+Adim 4: Production build
+   npm run build
+   # Cikti: ./dist/ klasoru
+
+Adim 5: Build onizleme
+   npm run preview
+
+Adim 6: Kod kontrolu
+   npm run lint        # ESLint
+   npm run type-check  # TypeScript tip kontrolu
+
+5. DEMO KULLANICI BILGILERI
+================================================================================
+E-posta: demo@demo.com
+Sifre: demo123
+Ad: Max Mustermann (Demo Kullanici)
+
+NOT: Gercek backend olmadigi icin tum veriler localStorage'da saklanir.
+
+6. SAYFA YAPISI (ROTALAR)
+================================================================================
+Herkese Acik:
+  /                        -> Ana sayfa (canli piyasa ticker'i ile)
+  /ueber-uns veya /about   -> Sirket hakkinda
+  /team                    -> Ekip sayfalari
+  /blog                    -> Blog listesi
+  /blog/:id                -> Blog detay
+  /maerkte                 -> Piyasa analizi
+  /kontakt                 -> Iletisim formu
+  /leistungen/festgeld     -> Vadeli mevduat urun bilgisi
+  /leistungen/flexgeld     -> Esnek mevduat urun bilgisi
+  /leistungen/tagesgeld    -> Gunluk mevduat urun bilgisi
+  /leistungen/aktien       -> Hisse senedi urun bilgisi
+  /leistungen/anleihen     -> Tahvil urun bilgisi
+  /impressum               -> Yasal bilgilendirme
+  /datenschutz             -> Veri koruma politikasi
+  /rechtliche-hinweise     -> Hukuki uyarilar
+
+Korunmus (Giris gerekli):
+  /login                   -> Giris sayfasi
+  /dashboard               -> Yatirimci paneli
+  /dashboard/festgeld      -> Vadeli mevduat portfoy
+  /dashboard/flexgeld      -> Esnek mevduat portfoy
+  /dashboard/tagesgeld     -> Gunluk mevduat portfoy
+  /dashboard/aktien        -> Hisse senedi portfoy
+  /dashboard/anleihen      -> Tahvil portfoy
+  /dashboard/profil        -> Kullanici profili
+
+7. DIZIN YAPISI
+================================================================================
+finanzinvest-modern/
+├── src/
+│   ├── App.tsx                  -> Kok bilesen
+│   ├── main.tsx                 -> Giris noktasi
+│   ├── index.css                -> Global stiller
+│   ├── components/
+│   │   ├── feature/
+│   │   │   ├── Header.tsx       -> Navigasyon
+│   │   │   ├── Footer.tsx       -> Alt bilgi
+│   │   │   ├── Layout.tsx       -> Duzenleme
+│   │   │   └── Testimonials.tsx -> Referanslar
+│   │   └── ScrollToTop.tsx
+│   ├── contexts/
+│   │   ├── AuthContext.tsx      -> Kimlik dogrulama
+│   │   ├── AuthContextDef.ts    -> Context tanimlari
+│   │   └── useAuth.ts           -> Auth hook
+│   ├── data/
+│   │   └── users.ts             -> Demo kullanici verileri
+│   ├── i18n/                    -> Coklu dil (DE/EN)
+│   ├── mocks/
+│   │   └── blogData.ts          -> Blog mock verileri
+│   ├── pages/                   -> Sayfa bilesenleri
+│   │   ├── home/                -> Ana sayfa + bilesenler
+│   │   ├── leistungen/          -> Urun sayfalari (5 adet)
+│   │   ├── dashboard/           -> Yatirimci paneli
+│   │   ├── about/               -> Hakkimizda
+│   │   ├── team/                -> Ekip
+│   │   ├── blog/                -> Blog
+│   │   ├── maerkte/             -> Piyasalar
+│   │   ├── kontakt/             -> Iletisim
+│   │   ├── login/               -> Giris
+│   │   ├── impressum/           -> Yasal
+│   │   ├── datenschutz/         -> Gizlilik
+│   │   └── rechtliche-hinweise/ -> Hukuki
+│   └── router/
+│       └── config.tsx           -> Rota tanimlari
+├── public/
+│   ├── images/                  -> 95 gorsel dosya
+│   ├── fetrag/                  -> Spinone Capital marka dosyalari
+│   ├── angebot/                 -> Statik teklif sayfalari (HTML)
+│   └── fetrag0001-0002/         -> Eski entegrasyonlar
+├── dist/                        -> Production build
+├── package.json
+├── vite.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+├── netlify.toml                 -> Netlify deploy yapilandirmasi
+└── index.html
+
+8. NETLIFY DEPLOY YAPILANDIRMASI
+================================================================================
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+9. ORTAM DEGISKENLERI
+================================================================================
+Bu proje .env dosyasi GEREKTIRMEZ.
+Vite tanimlari vite.config.ts icinde yapilmistir.
+
+10. PORT BILGILERI
+================================================================================
+Gelistirme sunucusu: http://localhost:3000
+Host: 0.0.0.0 (tum arayuzlerden erisilebilir)
+
+11. OZEL TEMA RENKLERI
+================================================================================
+Primary (Ana): #0A2540 (koyu lacivert)
+Gold Accent (Altin vurgu): #D4AF37
+Yazi Tipleri: Inter (govde), Manrope (basliklar)
+
+12. BASKA BILGISAYARDA CALISTIRMA
+================================================================================
+1. Proje klasorunu kopyalayin
+2. Node.js 18+ yukleyin
+3. npm install komutu ile bagimliliklari yukleyin
+4. npm run dev ile uygulamayi baslatin
+5. http://localhost:3000 adresinden erisin
+6. demo@demo.com / demo123 ile giris yapin
+
+NOT: Tamamen frontend projedir. Veritabani, backend veya Docker GEREKMEZ.
+Sadece npm install ve npm run dev yeterlidir.
+
+================================================================================
+  Finanzinvest Vermogensmanagement - Spinone Capital GmbH
+  Deploy: Netlify
+================================================================================

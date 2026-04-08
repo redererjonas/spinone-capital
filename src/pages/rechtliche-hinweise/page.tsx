@@ -224,7 +224,7 @@ export default function RechtlicheHinweisePage() {
                   <p>Sollten Sie Anlass zu einer Beschwerde haben, können Sie sich jederzeit an uns wenden:</p>
                   <div className="p-4 bg-slate-50 rounded-xl border border-slate-200">
                     <p><span className="font-semibold text-slate-900">E-Mail:</span> info@spinone-asset.com</p>
-                    <p><span className="font-semibold text-slate-900">Telefon:</span> +49 (0)89 588088170</p>
+                    <p><span className="font-semibold text-slate-900">Telefon:</span> 089 588088146</p>
                     <p><span className="font-semibold text-slate-900">Schriftlich:</span> Spinone Capital GmbH, Pienzenauerstraße 95, 81925 München</p>
                   </div>
                   <p className="mt-4">Wir werden Ihre Beschwerde umgehend prüfen und uns bemühen, diese innerhalb angemessener Frist zu beantworten.</p>
@@ -248,7 +248,7 @@ export default function RechtlicheHinweisePage() {
                 <p className="text-slate-600 mb-4">Bei Fragen zu den rechtlichen Hinweisen oder für weitere Informationen kontaktieren Sie uns bitte:</p>
                 <div className="space-y-2 text-slate-600">
                   <p><span className="font-semibold text-slate-900">E-Mail:</span> info@spinone-asset.com</p>
-                  <p><span className="font-semibold text-slate-900">Telefon:</span> +49 (0)89 588088170</p>
+                  <p><span className="font-semibold text-slate-900">Telefon:</span> 089 588088146</p>
                 </div>
               </div>
             </motion.div>

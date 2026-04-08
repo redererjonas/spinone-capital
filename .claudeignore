@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.git/
+*.min.js
+*.min.css
+*.map
+package-lock.json
+public/assets/fonts/
+public/assets/images/*.png
+public/assets/images/*.jpg
+public/assets/images/*.svg

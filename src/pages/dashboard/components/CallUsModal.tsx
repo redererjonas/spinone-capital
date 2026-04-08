@@ -44,10 +44,10 @@ export default function CallUsModal({ isOpen, onClose }: CallUsModalProps) {
               <div className="bg-blue-50 rounded-xl p-6 mb-6 border border-blue-200">
                 <p className="text-sm text-blue-600 mb-2 font-medium">Unsere Servicenummer</p>
                 <a
-                  href="tel:+4989588088170"
+                  href="tel:089588088146"
                   className="text-3xl font-bold text-slate-800 hover:text-blue-600 transition-colors"
                 >
-                  +49 (0)89 588088170
+                  089 588088146
                 </a>
                 <div className="mt-4 flex items-center justify-center gap-4 text-sm text-slate-600">
                   <div className="flex items-center gap-1">

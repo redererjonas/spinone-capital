@@ -311,11 +311,11 @@ export default function DashboardPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3">
                           <a
-                            href="tel:+4989588088170"
+                            href="tel:089588088146"
                             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-600/30 transition-all"
                           >
                             <i className="ri-phone-line text-xl"></i>
-                            +49 (0)89 588088170
+                            089 588088146
                           </a>
                           <a
                             href="mailto:info@spinone-asset.com"

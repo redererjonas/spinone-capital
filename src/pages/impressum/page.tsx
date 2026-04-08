@@ -71,7 +71,7 @@ export default function ImpressumPage() {
                   <span>Kontakt</span>
                 </h2>
                 <div className="space-y-2 text-slate-600">
-                  <p><span className="font-semibold text-slate-900">Telefon:</span> +49 (0)89 588088170</p>
+                  <p><span className="font-semibold text-slate-900">Telefon:</span> 089 588088146</p>
                   <p><span className="font-semibold text-slate-900">E-Mail:</span> info@spinone-asset.com</p>
                 </div>
               </div>

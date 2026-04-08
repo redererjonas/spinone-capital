@@ -93,11 +93,11 @@ export default function AnleihenDetailPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
-                      href="tel:+4989588088170"
+                      href="tel:089588088146"
                       className="inline-flex items-center justify-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all shadow-lg"
                     >
                       <i className="ri-phone-line text-2xl"></i>
-                      +49 (0)89 588088170
+                      089 588088146
                     </a>
                     <button
                       onClick={() => setShowCallModal(true)}
